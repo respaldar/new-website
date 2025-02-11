@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Respaldar - Sistema de Garantía Para Alquilar</title>
+    <meta
+      name="description"
+      content="Tu garantía para alquilar al mejor precio del mercado. Preaprobación Express sin costo. Requisitos mínimos."
+    />
+    <meta
+      name="keywords"
+      content="Garantias, Garantías, Fianzas, Sistema de garantia para alquiar, Alquiler, Garantes, Respaldar, Respaldar Garantías, garantias, garantia, garantía para alquilar, garantia para alquilar, garantia alquiler, garantia propietaria"
+    />
+    <meta name="geo.region" content="AR" />
+    <meta name="geo.placename" content="Buenos Aires" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.respaldar.com.ar/" />
+    <meta
+      property="og:title"
+      content="Respaldar - Sistema de Garantía Para Alquilar"
+    />
+    <meta
+      property="og:description"
+      content="Tu garantía para alquilar al mejor precio del mercado. Preaprobación Express sin costo. Requisitos mínimos."
+    />
+    <meta
+      property="og:image"
+      content="https://www.respaldar.com.ar/img/wp-thumb.png"
+    />
+
+    <!-- Twitter / Facebook-->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.respaldar.com.ar/" />
+    <meta
+      property="twitter:title"
+      content="Respaldar - Sistema de Garantía Para Alquilar"
+    />
+    <meta
+      property="twitter:description"
+      content="Tu garantía para alquilar al mejor precio del mercado. Preaprobación Express sin costo. Requisitos mínimos."
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.respaldar.com.ar/img/banner-redes.png"
+    />
+
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon" />
+
+    <!-- Tailwind-->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- Main Css -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="bg-black relative">
+      <nav
+        class="mx-auto flex items-center justify-between py-3 md:py-6"
+        aria-label="Global"
+      >
+        <div class="flex container justify-between">
+          <div class="flex lg:flex-1 items-center">
+            <a href="index.html"
+              ><img
+                src="img/logo.svg"
+                alt="logo"
+                class="w-[140px] md:w-[220px] h-auto md:h-auto"
+            /></a>
+          </div>
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-respaldar"
+              id="menu-button"
+            >
+              <span class="sr-only">Open main menu</span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12 md:items-center">
+            <a
+              href="index.html"
+              class="text-sm font-semibold leading-6 text-white cursor-pointer"
+              >INICIO</a
+            >
+            <div class="relative group">
+              <div
+                class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white cursor-pointer"
+                onclick="toggleSubmenu(this)"
+              >
+                GARANTÍA
+                <img
+                  src="img/icons/chevron-down.svg"
+                  alt="chevron-down"
+                  class="h-5 w-5 flex-none text-respaldar"
+                />
+              </div>
+
+              <!-- Sub-Garantía -->
+              <div
+                class="submenu absolute left-0 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 hidden"
+              >
+                <div class="p-4">
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="pre-aprobado-express-sin-cargo"
+                        class="block font-semibold text-gray-900"
+                        >Solicitar Garantía<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Rápida y al mejor precio del mercado
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <img
+                        src="img/icons/calculator-solid.svg"
+                        class="w-6 h-6"
+                        alt="calculator"
+                      />
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="calcularcosto.html"
+                        class="block font-semibold text-gray-900"
+                        >Calcular Costos<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Aprovechá nuestras promociones semanales
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <img
+                        src="img/icons/user-gear-solid.svg"
+                        class="w-6 h-6"
+                        alt="mi-garantia"
+                      />
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="/busca-tu-solicitud"
+                        class="block font-semibold text-gray-900"
+                        >Mí Garantía<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Seguí el proceso de tu garantía de cerca
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/phone.svg" class="w-4" alt="phone" />
+                    4551-3338
+                  </a>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/whatsapp.svg" class="w-4" alt="phone" />
+                    Respy IA
+                  </a>
+                </div>
+              </div>
+              <!-- Sub-Garantia END-->
+            </div>
+
+            <div class="relative group">
+              <div
+                class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white cursor-pointer"
+                onclick="toggleSubmenu(this)"
+              >
+                INFORMACIÓN
+                <img
+                  src="img/icons/chevron-down.svg"
+                  alt="chevron-down"
+                  class="h-5 w-5 flex-none text-respaldar"
+                />
+              </div>
+              <!-- Sub-Info -->
+              <div
+                class="submenu absolute left-0 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 hidden"
+              >
+                <div class="p-4">
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <img
+                        src="img/icons/users-solid.svg"
+                        class="w-6 h-6"
+                        alt="inquilinos"
+                      />
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="inquilinos.html"
+                        class="block font-semibold text-gray-900"
+                        >Inquilinos<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Rápida y al mejor precio del mercado
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <img
+                        src="img/icons/home-green.svg"
+                        class="w-6 h-6"
+                        alt="propietarios"
+                      />
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="propietarios.html"
+                        class="block font-semibold text-gray-900"
+                        >Propietarios<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Aprovechá nuestras promociones semanales
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <img
+                        src="img/icons/building-solid.svg"
+                        class="w-6 h-6"
+                        alt="inmobiliaria"
+                      />
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="inmobiliarias.html"
+                        class="block font-semibold text-gray-900"
+                        >Inmobiliarias<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Aprovechá nuestras promociones semanales
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <img
+                        src="img/icons/circle-info-solid.svg"
+                        class="w-6 h-6"
+                        alt="faqs"
+                      />
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="faq.html"
+                        class="block font-semibold text-gray-900"
+                        >Preguntas Frecuentes (FAQs)<span
+                          class="absolute inset-0"
+                        ></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Aprovechá nuestras promociones semanales
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/phone.svg" class="w-4" alt="phone" />
+                    4551-3338
+                  </a>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/whatsapp.svg" class="w-4" alt="phone" />
+                    Respy IA
+                  </a>
+                </div>
+              </div>
+              <!-- Sub-Info END-->
+            </div>
+            <div class="relative group">
+              <div
+                class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white cursor-pointer"
+                onclick="toggleSubmenu(this)"
+              >
+                INMOBILIARIAS
+                <img
+                  src="img/icons/chevron-down.svg"
+                  alt="chevron-down"
+                  class="h-5 w-5 flex-none text-respaldar"
+                />
+              </div>
+              <!-- Sub-Inmo -->
+              <div
+                class="submenu absolute left-0 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 hidden"
+              >
+                <div class="p-4">
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <img
+                        src="img/icons/handshake-angle-solid.svg"
+                        class="w-6 h-6"
+                        alt="adheridas"
+                      />
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="listadoinmobiliarias.html"
+                        class="block font-semibold text-gray-900"
+                        >Adheridas<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Rápida y al mejor precio del mercado
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <img
+                        src="img/icons/user-tie-solid.svg"
+                        class="w-6 h-6"
+                        alt="agentes-oficiales"
+                      />
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="agenteoficial.html"
+                        class="block font-semibold text-gray-900"
+                        >Agentes Oficiales<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Seguí el proceso de tu garantía de cerca
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/phone.svg" class="w-4" alt="phone" />
+                    4551-3338
+                  </a>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/whatsapp.svg" class="w-4" alt="phone" />
+                    Respy IA
+                  </a>
+                </div>
+              </div>
+              <!-- Sub-Inmo END-->
+            </div>
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end md:items-center">
+            <a
+              href="https://sistema.respaldar.com.ar/admin/login/agente-oficial"
+              target="_blank"
+              class="text-sm font-semibold leading-6 text-white"
+              >Acceder
+              <span aria-hidden="true" class="text-respaldar pl-2">→</span></a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <nav id="mobile-nav">
+        <ul style="touch-action: pan-y">
+          <li class="menu-active"><a href="index.html">Inicio</a></li>
+          <li class="menu-has-children">
+            <a href="#" class="submenu-toggle">
+              Garantía
+              <img
+                src="img/icons/chevron-down.svg"
+                alt="Chevron Down"
+                class="chevron"
+              />
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="pre-aprobado-express-sin-cargo">Solicitar Garantía</a>
+              </li>
+              <li><a href="calcularcosto.html">Calcular Costos</a></li>
+              <li><a href="busca-tu-solicitud">Mi Garantía</a></li>
+            </ul>
+          </li>
+          <li class="menu-has-children">
+            <a href="#" class="submenu-toggle">
+              Información
+              <img
+                src="img/icons/chevron-down.svg"
+                alt="Chevron Down"
+                class="chevron"
+              />
+            </a>
+            <ul class="submenu">
+              <li><a href="inquilinos.html">Inquilinos</a></li>
+              <li><a href="propietarios.html">Propietarios</a></li>
+              <li><a href="inmobiliarias.html">Inmobiliarias</a></li>
+              <li><a href="faq.html">Preguntas Frecuentes</a></li>
+            </ul>
+          </li>
+          <li class="menu-has-children">
+            <a href="#" class="submenu-toggle">
+              Inmobiliarias
+              <img
+                src="img/icons/chevron-down.svg"
+                alt="Chevron Down"
+                class="chevron w-4 h-4"
+              />
+            </a>
+            <ul class="submenu">
+              <li><a href="listadoinmobiliarias.html">Adheridas</a></li>
+              <li><a href="agenteoficial.html">Agentes Oficiales</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="log-in">
+          <a
+            href="https://sistema.respaldar.com.ar/admin/login/agente-oficial"
+            target="_blank"
+          >
+            <i class="fas fa-user-tie"></i> Acceder
+          </a>
+        </div>
+      </nav>
+
+      <div
+        style="
+          position: fixed;
+          top: 1px;
+          left: 1px;
+          width: 1px;
+          height: 0;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border-width: 0;
+          display: none;
+        "
+      ></div>
+    </header>
+
+    <section
+      id="hero"
+      class="flex flex-col items-center bg-respaldar bg-center pb-5 md:pb-0 md:pt-[30px]"
+    >
+      <div class="container">
+        <div class="mt-8 lg:mt-0">
+          <h1
+            class="mt-2 mb-8 text-4xl font-bold tracking-tight md:text-4xl xl:text-4xl text-black uppercase"
+          >
+            Beneficios para <br /><span
+              class="text-white xl:text-6xl capitalize"
+              >Inquilinos</span
+            >
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios" class="bg-gray-200 py-10">
+      <div class="container">
+        <!--   <h2
+          class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl"
+        >
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-black to-[#009045]"
+          >
+            Promociones de esta semana
+          </span>
+        </h2> -->
+        <h2 class="text-respaldar font-bold text-2xl md:text-4xl text-center">
+          Promociones de esta semana
+        </h2>
+
+        <div class="py-5 md:py-12 justify-between items-center">
+          <div
+            class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 justify-center items-center"
+          >
+            <article
+              class="bg-gray-200 border-solid border-[2px] border-black rounded-[51px_31px] h-[180px] w-[265px] flex items-center justify-center p-2"
+            >
+              <div>
+                <img src="img/30off.webp" alt="30-off" class="w-52" />
+              </div>
+            </article>
+
+            <article
+              class="bg-gray-200 border-solid border-[2px] border-black rounded-[51px_31px] h-[180px] w-[265px] flex items-center justify-center p-2"
+            >
+              <div>
+                <img src="img/15off.webp" alt="30-off" class="w-52" />
+              </div>
+            </article>
+
+            <article
+              class="bg-gray-200 border-solid border-[2px] border-black rounded-[51px_31px] h-[180px] w-[265px] flex items-center justify-center p-2"
+            >
+              <div>
+                <img src="img/6cuotas.webp" alt="30-off" class="w-52" />
+              </div>
+            </article>
+
+            <article
+              class="bg-gray-200 border-solid border-[2px] border-black rounded-[51px_31px] h-[180px] w-[265px] flex items-center justify-center p-2"
+            >
+              <div>
+                <img src="img/financiacion.webp" alt="30-off" class="w-52" />
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <a
+            class="bg-black text-white font-bold py-3 px-6 rounded-md text-lg shadow-md hover:bg-respaldar transition"
+            href="calcularcosto.html"
+            >Calculá el valor de tu garantía</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-200 py-10">
+      <div class="container">
+        <h2 class="text-respaldar font-bold text-2xl md:text-4xl text-center">
+          Beneficios pensados para vos
+        </h2>
+
+        <div class="grid md:grid-cols-3 md:gap-8 gap-5 pt-12">
+          <article class="flex items-start gap-4">
+            <img src="img/icons/clock-solid.svg" class="w-8" alt="icon" />
+            <div>
+              <h4 class="font-bold text-lg mb-2">
+                Preaprobación Express sin Cargo
+              </h4>
+              <p class="text-sm leading-6">
+                En menos de 2 horas podés saber si pre-calificas para nuestra
+                garantía, sin ningún tipo de costo.
+              </p>
+            </div>
+          </article>
+
+          <article class="flex items-start gap-4">
+            <img src="img/icons/bolt-solid.svg" class="w-8" alt="icon" />
+            <div>
+              <h4 class="font-bold text-lg mb-2">
+                Rapidez en Resolución de Garantía
+              </h4>
+              <p class="text-sm leading-6">
+                Contamos con un equipo profesional dedicado a cada legajo.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <div class="float-left">
+              <img
+                src="img/icons/money-bill-wave-solid.svg"
+                class="w-8"
+                alt="icon"
+              />
+            </div>
+            <h4 class="ml-14 font-bold mb-4 text-lg">
+              Sin Costos Hasta Conseguir el Alquiler.
+            </h4>
+            <p class="text-sm ml-14 leading-6 mb-0">
+              Nuestra garantía se abona únicamente cuando tengas vayas a hacer
+              uso de ella y ya tengas una propiedad reservada.
+            </p>
+          </article>
+
+          <article>
+            <div class="float-left">
+              <img
+                src="img/icons/circle-check-solid.svg"
+                class="w-8"
+                alt="icon"
+              />
+            </div>
+            <h4 class="ml-14 font-bold mb-4 text-lg">Mínimos Requisitos</h4>
+            <p class="text-sm ml-14 leading-6 mb-0">
+              Nuestra garantía es apta para todas las personas.
+            </p>
+          </article>
+
+          <article>
+            <div class="float-left">
+              <img
+                src="img/icons/magnifying-glass-solid-green.svg"
+                class="w-8"
+                alt="icon"
+              />
+            </div>
+            <h4 class="ml-14 font-bold mb-4 text-lg">
+              Te ayudamos a encontrar tu propiedad
+            </h4>
+            <p class="text-sm ml-14 leading-6 mb-0">
+              Contamos con nuestro portal de propiedades propio donde las
+              inmobiliarias de confianza pertenecientes a la Red Respaldar
+              publican su oferta.
+            </p>
+          </article>
+
+          <article>
+            <div class="float-left">
+              <img src="img/icons/comment-solid.svg" class="w-8" alt="icon" />
+            </div>
+            <h4 class="ml-14 font-bold mb-4 text-lg">
+              Comunicación con las Partes Involucradas
+            </h4>
+            <p class="text-sm ml-14 leading-6 mb-0">
+              Nos comunicamos con la inmobiliaria o propietario para informar
+              procesos y evacuar dudas.
+            </p>
+          </article>
+
+          <article>
+            <div class="float-left">
+              <img
+                src="img/icons/hourglass-half-solid.svg"
+                class="w-8"
+                alt="icon"
+              />
+            </div>
+            <h4 class="ml-14 font-bold mb-4 text-lg">No pierdas tiempo</h4>
+            <p class="text-sm ml-14 leading-6 mb-0">
+              Agilidad en las resoluciones y rápida gestión para firma de
+              contrato de locación.
+            </p>
+          </article>
+
+          <article>
+            <div class="float-left">
+              <img src="img/icons/percent-solid.svg" class="w-8" alt="icon" />
+            </div>
+            <h4 class="ml-14 font-bold mb-4 text-lg">
+              30% de Descuento Pagando de Contado
+            </h4>
+            <p class="text-sm ml-14 leading-6 mb-0">
+              Pagando la totalidad de contado podés acceder a un 30% de decuento
+              en el acto.
+            </p>
+          </article>
+          <article>
+            <div class="float-left">
+              <img
+                src="img/icons/credit-card-solid.svg"
+                class="w-8"
+                alt="icon"
+              />
+            </div>
+            <h4 class="ml-14 font-bold mb-4 text-lg">
+              3 Cuotas sin interés con ¡15% OFF!
+            </h4>
+            <p class="text-sm ml-14 leading-6 mb-0">
+              Obtené un 15% de descuento y aboná tu garantía en 3 cuotas sin
+              interés.
+            </p>
+          </article>
+          <article>
+            <div class="float-left">
+              <img
+                src="img/icons/calendar-check-solid.svg"
+                class="w-8"
+                alt="icon"
+              />
+            </div>
+            <h4 class="ml-14 font-bold mb-4 text-lg">6 Cuotas sin Interés</h4>
+            <p class="text-sm ml-14 leading-6 mb-0">
+              Optá por abonar tu garantía en 6 cuotas, abonando 30% de anticipo
+              y 5 cuotas sin interés.
+            </p>
+          </article>
+          <article>
+            <div class="float-left">
+              <img
+                src="img/icons/clock-solid.svg"
+                class="w-8 text-respaldar"
+                alt="icon"
+              />
+            </div>
+            <h4 class="ml-14 font-bold mb-4 text-lg">
+              Resolución En Menos De 24
+            </h4>
+            <p class="text-sm ml-14 leading-6 mb-0">
+              Una vez presentada la documentación, en menos de 24 horas
+              obtendrás la resolución de tu garantía.
+            </p>
+          </article>
+          <article>
+            <div class="float-left">
+              <img src="img/icons/user-tie-solid.svg" class="w-8" alt="icon" />
+            </div>
+            <h4 class="ml-14 font-bold mb-4 text-lg">
+              Asesoramiento Personalizado
+            </h4>
+            <p class="text-sm ml-14 leading-6 mb-0">
+              Un asesor comercial estará a su disposición para que puedas
+              realizar las consultas que necesites
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="requisitos" class="py-10">
+      <div class="container">
+        <h2
+          class="text-respaldar font-bold text-2xl md:text-4xl text-center pb-12"
+        >
+          Requisitos para obtener tu garantía
+        </h2>
+
+        <p class="mb-6 text-center">
+          Se requieren al menos dos personas que puedan demostrar ingresos,
+          debiendo presentar la documentación requerida.
+        </p>
+        <p class="mb-6 text-center">
+          La suma del 30% de los ingresos demostrados debe cubrir el alquiler +
+          expensas, en caso de no superar se requiere 1 Co-Solicitante más.
+        </p>
+        <p class="mb-6 text-center">
+          Si el SOLICITANTE (inquilino) no posee ingresos demostrables, aún así
+          puede obtener la garantía. Deberá contar con 2 Co-Solicitantes como
+          mínimo que demuestren ingresos.
+        </p>
+
+        <div class="space-y-4">
+          <div class="bg-gray-200 rounded-xl overflow-hidden">
+            <!-- Relación de Dependencia -->
+            <div class="border rounded-lg overflow-hidden mb-2">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel1', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left">Relación de Dependencia</span>
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel1" class="hidden p-4 bg-gray-100 text-sm">
+                <ul class="space-y-2">
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    Último recibo de sueldo
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    DNI (frente y dorso)
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    Antigüedad mínima 3 meses
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Monotributistas -->
+            <div class="border rounded-lg overflow-hidden mb-2">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel2', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left">Monotributistas</span>
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel2" class="hidden p-4 bg-gray-100 text-sm">
+                <ul class="space-y-2">
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    3 últimos pagos de Monotributo.
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    DNI (frente y dorso).
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    3 últimos pagos de Ingresos Brutos, si corresponde a la
+                    actividad.
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    Constancia de Inscripción AFIP, donde se indica la
+                    categoría.
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    6 últimas facturas emitidas.
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    Antigüedad mínima 1 año.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Responsable Inscripto -->
+            <div class="border rounded-lg overflow-hidden mb-2">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel3', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left">Responsable Inscripto</span>
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel3" class="hidden p-4 bg-gray-100 text-sm">
+                <ul class="space-y-2">
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    Última declaración jurada de Ganancias (F.711)
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    DNI (frente y dorso)
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    6 últimas facturas emitidas
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    3 últimas presentaciones de Ingresos Brutos
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    3 últimos pagos de Autónomo
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    Constancia de Inscripción AFIP
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    Antigüedad mínima 1 año
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    Para Profesionales: Matrícula
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    Para Comerciantes: Habilitación del comercio
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    Para Sociedades: Contrato de sociedad y estatuto
+                  </li>
+                  <li class="flex items-center">
+                    <img
+                      src="img/icons/check-solid.svg"
+                      alt="check"
+                      class="text-green-600 h-5 w-5 mr-2"
+                    />
+                    Poder Especial: Se requerirá complementariamente
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+        </div>
+      </div>
+      <script>
+        function togglePanel(panelId, button) {
+          let panel = document.getElementById(panelId);
+          panel.classList.toggle("hidden");
+
+          let chevronIcon = button.querySelector(".chevron-icon");
+          chevronIcon.classList.toggle("rotate-180");
+        }
+      </script>
+    </section>
+
+    <section class="bg-gray-200">
+      <div class="container">
+        <div class="reviews-section max-w-6xl mx-auto my-10 py-6">
+          <h2 class="text-respaldar font-bold text-2xl md:text-4xl text-center">
+            Lo que nuestros clientes dicen
+          </h2>
+
+          <div class="carousel relative w-full pt-12 overflow-hidden">
+            <div
+              class="carousel-inner flex gap-4 transition-transform duration-500 ease-in-out cursor-grab"
+              style="transform: translateX(0)"
+            >
+              <!-- Reseña 1 -->
+              <div
+                class="review-card bg-white p-6 w-full sm:w-[calc(100%-1rem)] md:w-[calc(33.333%-1rem)] rounded-lg shadow-lg flex-none md:ml-2 select-none"
+              >
+                <div class="review-header flex items-center mb-4">
+                  <div
+                    class="avatar w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center mr-4"
+                  >
+                    <span class="text-white text-xl font-semibold">Al</span>
+                  </div>
+                  <div class="review-info flex flex-col">
+                    <span class="reviewer-name font-bold text-md text-gray-700"
+                      >Alejandro</span
+                    >
+                    <span class="stars text-yellow-500 text-xl">★★★★★</span>
+                  </div>
+                </div>
+                <p class="review-text text-gray-600 text-base">
+                  Excelente empresa la verdad estoy sorprendido con la rapidez
+                  que trabajan y que todo salió perfecto. Lo recomiendo 100% son
+                  personas confiables, responsables, y puntuales.
+                </p>
+              </div>
+
+              <!-- Reseña 2 -->
+              <div
+                class="review-card bg-white p-6 w-full sm:w-[calc(100%-1rem)] md:w-[calc(33.333%-1rem)] rounded-lg shadow-lg flex-none select-none"
+              >
+                <div class="review-header flex items-center mb-4">
+                  <div
+                    class="avatar w-12 h-12 rounded-full bg-green-700 flex items-center justify-center mr-4"
+                  >
+                    <span class="text-white text-xl font-semibold">Me</span>
+                  </div>
+                  <div class="review-info flex flex-col">
+                    <span class="reviewer-name font-bold text-md text-gray-700"
+                      >Melisa</span
+                    >
+                    <span class="stars text-yellow-500 text-xl">★★★★★</span>
+                  </div>
+                </div>
+                <p class="review-text text-gray-600 text-base">
+                  Muy buena atención de verdad, estoy muy contenta y me sentí
+                  muy conforme con todo desde el comienzo. Son todos muy
+                  profesionales y los recomiendo mucho.
+                </p>
+              </div>
+
+              <!-- Reseña 3 -->
+              <div
+                class="review-card bg-white p-6 w-full sm:w-[calc(100%-1rem)] md:w-[calc(33.333%-1rem)] rounded-lg shadow-lg flex-none select-none"
+              >
+                <div class="review-header flex items-center mb-4">
+                  <div
+                    class="avatar w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center mr-4"
+                  >
+                    <span class="text-white text-xl font-semibold">Ne</span>
+                  </div>
+                  <div class="review-info flex flex-col">
+                    <span class="reviewer-name font-bold text-md text-gray-700"
+                      >Neilu</span
+                    >
+                    <span class="stars text-yellow-500 text-xl">★★★★★</span>
+                  </div>
+                </div>
+                <p class="review-text text-gray-600 text-base">
+                  Excelente atención desde el minuto 1. Todo super rápido, ah y
+                  tienen los mejores precios. Gracias por el acompañamiento,
+                  siempre atentos en todo el proceso.
+                </p>
+              </div>
+
+              <!-- Reseña 4 -->
+              <div
+                class="review-card bg-white p-6 w-full sm:w-[calc(100%-1rem)] md:w-[calc(33.333%-1rem)] rounded-lg shadow-lg flex-none select-none"
+              >
+                <div class="review-header flex items-center mb-4">
+                  <div
+                    class="avatar w-12 h-12 rounded-full bg-green-700 flex items-center justify-center mr-4"
+                  >
+                    <span class="text-white text-xl font-semibold">Jo</span>
+                  </div>
+                  <div class="review-info flex flex-col">
+                    <span class="reviewer-name font-bold text-md text-gray-700"
+                      >Jorge</span
+                    >
+                    <span class="stars text-yellow-500 text-xl">★★★★★</span>
+                  </div>
+                </div>
+                <p class="review-text text-gray-600 text-base">
+                  Un servicio increíble, siempre atentos y rápidos para resolver
+                  cualquier duda. Me siento muy satisfecho con el trabajo
+                  realizado, sin dudas volveré a contratarlos.
+                </p>
+              </div>
+
+              <!-- Reseña 5 -->
+              <div
+                class="review-card bg-white p-6 w-full sm:w-[calc(100%-1rem)] md:w-[calc(33.333%-1rem)] rounded-lg shadow-lg flex-none select-none"
+              >
+                <div class="review-header flex items-center mb-4">
+                  <div
+                    class="avatar w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center mr-4"
+                  >
+                    <span class="text-white text-xl font-semibold">Lu</span>
+                  </div>
+                  <div class="review-info flex flex-col">
+                    <span class="reviewer-name font-bold text-md text-gray-700"
+                      >Lucía</span
+                    >
+                    <span class="stars text-yellow-500 text-xl">★★★★★</span>
+                  </div>
+                </div>
+                <p class="review-text text-gray-600 text-base">
+                  Muy contenta con el trabajo. El equipo fue muy profesional y
+                  resolvió todas mis dudas de manera rápida y eficiente. El
+                  proceso fue muy sencillo y el resultado final superó mis
+                  expectativas.
+                </p>
+              </div>
+
+              <!-- Reseña 6 -->
+              <div
+                class="review-card bg-white p-6 w-full sm:w-[calc(100%-1rem)] md:w-[calc(33.333%-1rem)] rounded-lg shadow-lg flex-none select-none"
+              >
+                <div class="review-header flex items-center mb-4">
+                  <div
+                    class="avatar w-12 h-12 rounded-full bg-green-700 flex items-center justify-center mr-4"
+                  >
+                    <span class="text-white text-xl font-semibold">Ma</span>
+                  </div>
+                  <div class="review-info flex flex-col">
+                    <span class="reviewer-name font-bold text-md text-gray-700"
+                      >María</span
+                    >
+                    <span class="stars text-yellow-500 text-xl">★★★★★</span>
+                  </div>
+                </div>
+                <p class="review-text text-gray-600 text-base">
+                  ¡Excelente atención y servicio! Me ayudaron a resolver todas
+                  mis dudas y el trabajo fue realizado con mucha dedicación.
+                  Estoy muy satisfecha con el resultado y sin duda los
+                  recomendaré.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        let currentSlide = 0;
+        const slidesToShow = window.innerWidth < 768 ? 1 : 3;
+        const updateSlideWidth = () =>
+          document.querySelector(".review-card").offsetWidth;
+        let slideWidth = updateSlideWidth();
+        const gap = 16; // 4rem convertido a px
+        const carouselInner = document.querySelector(".carousel-inner");
+        const slides = document.querySelectorAll(
+          ".carousel-inner .review-card"
+        );
+        const totalSlides = slides.length;
+
+        let startX = 0;
+        let isDragging = false;
+        let autoSlideInterval;
+        let isAutoSliding = false;
+        let autoSlideTimeout;
+
+        function showSlide(index) {
+          currentSlide = Math.max(
+            0,
+            Math.min(index, totalSlides - slidesToShow)
+          );
+          slideWidth = updateSlideWidth();
+          const offset = -(currentSlide * (slideWidth + gap));
+          carouselInner.style.transform = `translateX(${offset}px)`;
+        }
+
+        // Movimiento automático en loop
+        function autoSlide() {
+          if (isAutoSliding) {
+            currentSlide++;
+            if (currentSlide >= totalSlides) {
+              currentSlide = 0; // Vuelve al primer slide
+            }
+            showSlide(currentSlide);
+          }
+        }
+
+        // Iniciar el slider automático
+        function startAutoSlide() {
+          isAutoSliding = true;
+          autoSlideInterval = setInterval(autoSlide, 3000); // Cambia cada 3 segundos
+        }
+
+        // Detener el slider automático
+        function stopAutoSlide() {
+          isAutoSliding = false;
+          clearInterval(autoSlideInterval);
+        }
+
+        // Pausar el slider automático cuando se empieza a arrastrar
+        carouselInner.addEventListener("mousedown", (e) => {
+          isDragging = true;
+          startX = e.pageX;
+          stopAutoSlide(); // Detener el slider automático
+          carouselInner.style.cursor = "grabbing"; // Cambiar el cursor
+        });
+
+        carouselInner.addEventListener("mousemove", (e) => {
+          if (!isDragging) return;
+          const distance = startX - e.pageX;
+          if (Math.abs(distance) > 50) {
+            if (distance > 0) {
+              showSlide(currentSlide + 1);
+            } else {
+              showSlide(currentSlide - 1);
+            }
+            isDragging = false; // Detiene el movimiento después de deslizar
+          }
+        });
+
+        carouselInner.addEventListener("mouseup", () => {
+          isDragging = false;
+          // Retrasar el reinicio del deslizamiento automático por 3 segundos
+          clearTimeout(autoSlideTimeout);
+          autoSlideTimeout = setTimeout(() => {
+            startAutoSlide(); // Reanudar el slider automático
+          }, 3000); // 3 segundos
+          carouselInner.style.cursor = "grab"; // Restaurar cursor
+        });
+
+        carouselInner.addEventListener("mouseleave", () => {
+          isDragging = false;
+          // Retrasar el reinicio del deslizamiento automático por 3 segundos
+          clearTimeout(autoSlideTimeout);
+          autoSlideTimeout = setTimeout(() => {
+            startAutoSlide(); // Reanudar el slider automático
+          }, 3000); // 3 segundos
+          carouselInner.style.cursor = "grab"; // Restaurar cursor
+        });
+
+        // Para dispositivos táctiles
+        carouselInner.addEventListener("touchstart", (e) => {
+          isDragging = true;
+          startX = e.touches[0].pageX;
+          stopAutoSlide(); // Detener el slider automático
+        });
+
+        carouselInner.addEventListener("touchmove", (e) => {
+          if (!isDragging) return;
+          const distance = startX - e.touches[0].pageX;
+          if (Math.abs(distance) > 50) {
+            if (distance > 0) {
+              showSlide(currentSlide + 1);
+            } else {
+              showSlide(currentSlide - 1);
+            }
+            isDragging = false;
+          }
+        });
+
+        carouselInner.addEventListener("touchend", () => {
+          isDragging = false;
+          // Retrasar el reinicio del deslizamiento automático por 3 segundos
+          clearTimeout(autoSlideTimeout);
+          autoSlideTimeout = setTimeout(() => {
+            startAutoSlide(); // Reanudar el slider automático
+          }, 3000); // 3 segundos
+        });
+
+        window.addEventListener("resize", () => {
+          slideWidth = updateSlideWidth();
+          showSlide(currentSlide);
+        });
+
+        // Iniciar el slider automático cuando se carga la página
+        startAutoSlide();
+
+        showSlide(currentSlide);
+      </script>
+    </section>
+
+    <section class="bg-black">
+      <div class="bg-gray-200 rounded-b-[30px] md:rounded-b-[60px] py-10"></div>
+    </section>
+
+    <!-- Start Mobile Navbar -->
+    <div class="fixed bottom-0 w-full bg-black text-white md:hidden lg:hidden">
+      <ul class="flex justify-around items-center py-3">
+        <li class="text-center">
+          <a
+            href="https://wa.me/5491180590005?text=Quiero%20obtener%20informacion"
+            target="_blank"
+            class="text-white hover:text-respaldar flex flex-col justify-center items-center"
+          >
+            <img
+              src="img/icons/user-plus-solid.svg"
+              alt="Contactar"
+              class="w-7 h-7 pb-2"
+            />
+            <span class="text-sm">Solicitar</span>
+          </a>
+        </li>
+        <li class="text-center">
+          <a
+            href="web/busca-tu-solicitud"
+            target="_blank"
+            class="text-white hover:text-respaldar flex flex-col justify-center items-center"
+          >
+            <img
+              src="img/icons/user-gear-solid.svg"
+              alt="Mi Garantía"
+              class="w-7 h-7 pb-2"
+            />
+            <span class="text-sm">Mi Garantía</span>
+          </a>
+        </li>
+        <li class="text-center">
+          <a
+            href="calcularcosto.html"
+            target="_blank"
+            class="text-white hover:text-respaldar flex flex-col justify-center items-center"
+          >
+            <img
+              src="img/icons/calculator-solid.svg"
+              alt="Costo"
+              class="w-7 h-7 pb-2"
+            />
+            <span class="text-sm">Costo</span>
+          </a>
+        </li>
+        <li class="text-center">
+          <a
+            href="listadoinmobiliarias.html"
+            target="_blank"
+            class="text-white hover:text-respaldar flex flex-col justify-center items-center"
+          >
+            <img
+              src="img/icons/building-solid.svg"
+              alt="Inmobiliarias"
+              class="w-7 h-7 pb-2"
+            />
+            <span class="text-sm">Inmobiliarias</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- End Mobile Navbar -->
+
+    <footer class="bg-black mt-auto py-10 text-sm">
+      <div class="container flex justify-center">
+        <div class="grid md:grid-cols-4 gap-4 md:gap-12">
+          <div class="text-white">
+            <h4 class="uppercase font-bold mb-1 text-respaldar">
+              Casa Central / Legales
+            </h4>
+            <hr class="w-10 mb-4" />
+            <p class="pb-4">
+              <strong>Colegiales</strong><br />
+              Jorge Newbery 3835 <br />
+              CABA, Argentina<br />
+              <strong>Teléfono:</strong> 4551-3338<br />
+              <strong>Whatsapp:</strong> 11-8059-0005<br />
+              <strong>Email:</strong> legales@respaldar.com.ar<br />
+            </p>
+          </div>
+          <div class="text-white">
+            <h4 class="uppercase font-bold mb-1 text-respaldar">
+              Ventas / Comercial
+            </h4>
+            <hr class="w-10 mb-4" />
+            <p class="pb-4">
+              <strong>Edificio Respaldar Caballito</strong><br />
+              Franklin 787 <br />
+              CABA, Argentina<br />
+              <strong>Teléfono:</strong> 4551-3338<br />
+              <strong>Whatsapp:</strong> 11-8059-0005<br />
+              <strong>Email:</strong> comercial@respaldar.com.ar<br />
+            </p>
+          </div>
+          <div class="text-white">
+            <h4 class="uppercase font-bold mb-1 text-respaldar">
+              Administración
+            </h4>
+            <hr class="w-10 mb-4" />
+            <p class="pb-4">
+              <strong>Edificio Respaldar Palermo</strong><br />
+              Soler 3850<br />
+              CABA, Argentina<br />
+              <strong>Teléfono:</strong> 4551-3338<br />
+              <strong>Whatsapp:</strong> 11-8059-0005<br />
+              <strong>Email:</strong> info@respaldar.com.ar<br />
+            </p>
+          </div>
+          <div class="text-white">
+            <h4 class="uppercase font-bold mb-1 text-respaldar">
+              Oficinas Online
+            </h4>
+            <hr class="w-10 mb-4" />
+            <p class="pb-2">
+              <strong>Tigre - Nordelta</strong><br />
+              Pto. Diamante 365. Zaduh<br />
+              CABA, Argentina<br />
+            </p>
+            <p class="pb-4">
+              <strong>Villa Ortuzar</strong><br />
+              Donado 808<br />
+              Buenos Aires, Argentina<br />
+            </p>
+          </div>
+          <div class="text-white">
+            <h4 class="uppercase font-bold mb-1 text-respaldar">
+              Agentes Oficiales
+            </h4>
+            <hr class="w-10 mb-4" />
+            <p class="pb-4">
+              Gestioná tu Garantía Respaldar directamente con tu Agente Oficial.
+            </p>
+            <a
+              href="https://sistema.respaldar.com.ar/admin/login/agente-oficial"
+              target="_blank"
+              class="text-sm font-semibold text-white pt-4"
+              >Acceder
+              <span aria-hidden="true" class="text-respaldar pl-2">→</span></a
+            >
+          </div>
+          <div class="text-white">
+            <h4 class="uppercase font-bold mb-1 text-respaldar">
+              Mantenete Informado
+            </h4>
+            <hr class="w-10 mb-4" />
+            <p class="pb-4">
+              Seguinos en nuestras redes sociales y obtené toda la información
+              relevante.
+            </p>
+            <div class="flex gap-2">
+              <a
+                href="https://www.instagram.com/respaldargarantia/"
+                target="_blank"
+                ><img
+                  src="img/icons/instagram-brands-solid.svg"
+                  alt="instagram"
+                  class="w-4 h-4"
+              /></a>
+              <a
+                href="https://www.facebook.com/RespaldarGarantia"
+                target="_blank"
+                ><img
+                  src="img/icons/facebook-brands-solid.svg"
+                  alt="facebook"
+                  class="w-4 h-4"
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/respaldargarantia"
+                target="_blank"
+                ><img
+                  src="img/icons/linkedin-brands-solid.svg"
+                  alt="linkedin"
+                  class="w-4 h-4"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex text-white justify-center p-8">
+        © Copyright RESPALDAR de COMBRE S.A. All Rights Reserved
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- START Botmaker Webchat-->
+    <script>
+      (function () {
+        let js = document.createElement("script");
+        js.type = "text/javascript";
+        js.async = 1;
+        js.src = "https://go.botmaker.com/rest/webchat/p/PP5615QC7C/init.js";
+        document.body.appendChild(js);
+
+        // Estilos en línea
+        js.onload = function () {
+          let whatsappLink = document.querySelector('a[title="WhatsApp"]');
+
+          if (whatsappLink) {
+            let whatsappImage = whatsappLink.querySelector("img");
+            let whatsappDiv = whatsappLink.querySelector("div");
+
+            // Aplicar estilos a la imagen
+            whatsappImage.style.bottom = "80px";
+
+            // Aplicar estilos al div
+            whatsappDiv.style.bottom = "80px";
+          }
+        };
+      })();
+    </script>
+    <!-- END Botmaker Webchat-->
+  </body>
+</html>

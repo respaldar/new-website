@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Respaldar - Sistema de Garantía Para Alquilar</title>
+    <meta
+      name="description"
+      content="Tu garantía para alquilar al mejor precio del mercado. Preaprobación Express sin costo. Requisitos mínimos."
+    />
+    <meta
+      name="keywords"
+      content="Garantias, Garantías, Fianzas, Sistema de garantia para alquiar, Alquiler, Garantes, Respaldar, Respaldar Garantías, garantias, garantia, garantía para alquilar, garantia para alquilar, garantia alquiler, garantia propietaria"
+    />
+    <meta name="geo.region" content="AR" />
+    <meta name="geo.placename" content="Buenos Aires" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.respaldar.com.ar/" />
+    <meta
+      property="og:title"
+      content="Respaldar - Sistema de Garantía Para Alquilar"
+    />
+    <meta
+      property="og:description"
+      content="Tu garantía para alquilar al mejor precio del mercado. Preaprobación Express sin costo. Requisitos mínimos."
+    />
+    <meta
+      property="og:image"
+      content="https://www.respaldar.com.ar/img/wp-thumb.png"
+    />
+
+    <!-- Twitter / Facebook-->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.respaldar.com.ar/" />
+    <meta
+      property="twitter:title"
+      content="Respaldar - Sistema de Garantía Para Alquilar"
+    />
+    <meta
+      property="twitter:description"
+      content="Tu garantía para alquilar al mejor precio del mercado. Preaprobación Express sin costo. Requisitos mínimos."
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.respaldar.com.ar/img/banner-redes.png"
+    />
+
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon" />
+
+    <!-- Tailwind-->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- Main Css -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="bg-black relative">
+      <nav
+        class="mx-auto flex items-center justify-between py-3 md:py-6"
+        aria-label="Global"
+      >
+        <div class="flex container justify-between">
+          <div class="flex lg:flex-1 items-center">
+            <a href="index.html"
+              ><img
+                src="img/logo-16.svg"
+                alt="logo"
+                class="w-[140px] md:w-[220px] h-auto md:h-auto"
+            /></a>
+          </div>
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-respaldar"
+              id="menu-button"
+            >
+              <span class="sr-only">Open main menu</span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12 md:items-center">
+            <a
+              href="index.html"
+              class="text-sm font-semibold leading-6 text-white cursor-pointer"
+              >INICIO</a
+            >
+            <div class="relative group">
+              <div
+                class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white cursor-pointer"
+                onclick="toggleSubmenu(this)"
+              >
+                GARANTÍA
+                <img
+                  src="img/icons/chevron-down.svg"
+                  alt="chevron-down"
+                  class="h-5 w-5 flex-none text-respaldar"
+                />
+              </div>
+
+              <!-- Sub-Garantía -->
+              <div
+                class="submenu absolute left-0 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 hidden"
+              >
+                <div class="p-4">
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="pre-aprobado-express-sin-cargo"
+                        class="block font-semibold text-gray-900"
+                        >Solicitar Garantía<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Rápida y al mejor precio del mercado
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="calcularcosto.html"
+                        class="block font-semibold text-gray-900"
+                        >Calcular Costos<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Aprovechá nuestras promociones semanales
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="/calcularcosto.html"
+                        class="block font-semibold text-gray-900"
+                        >Mí Garantía<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Seguí el proceso de tu garantía de cerca
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/phone.svg" class="w-4" alt="phone" />
+                    4551-3338
+                  </a>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/whatsapp.svg" class="w-4" alt="phone" />
+                    Respy IA
+                  </a>
+                </div>
+              </div>
+              <!-- Sub-Garantia END-->
+            </div>
+
+            <div class="relative group">
+              <div
+                class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white cursor-pointer"
+                onclick="toggleSubmenu(this)"
+              >
+                INFORMACIÓN
+                <img
+                  src="img/icons/chevron-down.svg"
+                  alt="chevron-down"
+                  class="h-5 w-5 flex-none text-respaldar"
+                />
+              </div>
+              <!-- Sub-Info -->
+              <div
+                class="submenu absolute left-0 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 hidden"
+              >
+                <div class="p-4">
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900"
+                        >Inquilinos<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Rápida y al mejor precio del mercado
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="/calcularcosto"
+                        class="block font-semibold text-gray-900"
+                        >Propietarios<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Aprovechá nuestras promociones semanales
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="/calcularcosto"
+                        class="block font-semibold text-gray-900"
+                        >Inmobiliarias<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Aprovechá nuestras promociones semanales
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="/calcularcosto"
+                        class="block font-semibold text-gray-900"
+                        >Preguntas Frecuentes (FAQs)<span
+                          class="absolute inset-0"
+                        ></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Aprovechá nuestras promociones semanales
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/phone.svg" class="w-4" alt="phone" />
+                    4551-3338
+                  </a>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/whatsapp.svg" class="w-4" alt="phone" />
+                    Respy IA
+                  </a>
+                </div>
+              </div>
+              <!-- Sub-Info END-->
+            </div>
+            <div class="relative group">
+              <div
+                class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white cursor-pointer"
+                onclick="toggleSubmenu(this)"
+              >
+                INMOBILIARIAS
+                <img
+                  src="img/icons/chevron-down.svg"
+                  alt="chevron-down"
+                  class="h-5 w-5 flex-none text-respaldar"
+                />
+              </div>
+              <!-- Sub-Inmo -->
+              <div
+                class="submenu absolute left-0 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 hidden"
+              >
+                <div class="p-4">
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="pre-aprobado-express-sin-cargo"
+                        class="block font-semibold text-gray-900"
+                        >Adheridas<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Rápida y al mejor precio del mercado
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="/calcularcosto.html"
+                        class="block font-semibold text-gray-900"
+                        >Agentes Oficiales<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Seguí el proceso de tu garantía de cerca
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/phone.svg" class="w-4" alt="phone" />
+                    4551-3338
+                  </a>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/whatsapp.svg" class="w-4" alt="phone" />
+                    Respy IA
+                  </a>
+                </div>
+              </div>
+              <!-- Sub-Inmo END-->
+            </div>
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end md:items-center">
+            <a href="#" class="text-sm font-semibold leading-6 text-white"
+              >Acceder
+              <span aria-hidden="true" class="text-respaldar pl-2">→</span></a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <nav id="mobile-nav" class="">
+        <ul style="touch-action: pan-y">
+          <li class="menu-active"><a href="index.html">Inicio</a></li>
+          <li class="menu-has-children">
+            <a href="#" class="submenu-toggle">Garantía</a>
+            <ul class="submenu">
+              <li>
+                <a href="pre-aprobado-express-sin-cargo">Solicitar Garantía</a>
+              </li>
+              <li><a href="calcularcosto.html">Calcular Costos</a></li>
+              <li><a href="busca-tu-solicitud">Mi Garantía</a></li>
+            </ul>
+          </li>
+          <li class="menu-has-children">
+            <a href="#" class="submenu-toggle">Información</a>
+            <ul class="submenu">
+              <li><a href="inquilinos.html">Inquilinos</a></li>
+              <li><a href="propietarios.html">Propietarios</a></li>
+              <li><a href="inmobiliarias.html">Inmobiliarias</a></li>
+              <li><a href="faq.html">Preguntas Frecuentes</a></li>
+            </ul>
+          </li>
+          <li class="menu-has-children">
+            <a href="#" class="submenu-toggle">Inmobiliarias</a>
+            <ul class="submenu">
+              <li><a href="listadoinmobiliarias.html">Adheridas</a></li>
+              <li><a href="agenteoficial.html">Agentes Oficiales</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="log-in">
+          <a
+            href="https://sistema.respaldar.com.ar/admin/login/agente-oficial"
+            target="_blank"
+          >
+            <i class="fas fa-user-tie"></i> Acceder
+          </a>
+        </div>
+      </nav>
+
+      <div
+        style="
+          position: fixed;
+          top: 1px;
+          left: 1px;
+          width: 1px;
+          height: 0;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border-width: 0;
+          display: none;
+        "
+      ></div>
+    </header>
+
+    <section
+      id="hero"
+      class="flex flex-col items-center bg-respaldar bg-center pb-5 md:pb-0 md:pt-[30px]"
+    >
+      <div class="container mt:[100px]">
+        <div class="mt-8 lg:mt-0">
+          <h1
+            class="mt-2 mb-8 text-4xl font-bold tracking-tight md:text-4xl xl:text-4xl text-black uppercase"
+          >
+            Preguntas<br /><span class="text-white xl:text-6xl capitalize"
+              >Frecuentes</span
+            >
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="pt-6">
+      <div class="container">
+        <div class="w-full max-w-4xl mx-auto">
+          <div class="relative w-full">
+            <div class="relative w-full">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Buscar pregunta..."
+                class="w-full pl-10 p-2 mb-4 border rounded-lg"
+              />
+              <!-- Icono de lupa como imagen -->
+              <img
+                src="img/icons/magnifying-glass-solid.svg"
+                alt="Buscar"
+                class="absolute left-3 top-[40%] transform -translate-y-[55%] w-4 h-4 text-gray-500"
+              />
+            </div>
+          </div>
+
+          <h3 class="text-2xl font-bold pb-2 faq-header">Sobre la garantía</h3>
+          <div class="space-y-2" id="faqContainer">
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel1', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Qué es una garantía Respaldar?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel1" class="hidden p-4 bg-gray-100">
+                El sistema de garantía Respaldar es una contratación bajo un
+                contrato de fianza que se firma entre locatario, codeudor y
+                Respaldar donde compromete a la empresa a salir de garante y
+                avalar el contrato de locación que el locatario haya
+                seleccionado.
+              </div>
+            </div>
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel2', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Cuánto demoran en realizar la garantía Respaldar?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel2" class="hidden p-4 bg-gray-100">
+                24hs a partir de tener la documentación completa.
+              </div>
+            </div>
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel3', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Cómo es el procedimiento de contratación?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel3" class="hidden p-4 bg-gray-100">
+                Una vez presentada la documentación y aprobada la garantía, se
+                firma el contrato de fianza y se abona la contratación. A partir
+                de allí respaldar autoriza para coordinar la firma del contrato
+                de locación con las partes.
+              </div>
+            </div>
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel4', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Cómo se hace para entregar la documentación necesaria?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel4" class="hidden p-4 bg-gray-100">
+                Vía web, whatsapp o mail se puede realizar todo el trámite o si
+                se prefiere en la oficina central de Respaldar.
+              </div>
+            </div>
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel5', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Qué cubre nuestra garantía?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel5" class="hidden p-4 bg-gray-100">
+                El alquiler, expensas ordinarias e impuestos (adicionando luz y
+                gas en caso de vivienda) desde el día 1 y hasta la restitución
+                del inmueble.
+              </div>
+            </div>
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel6', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Hasta cuándo cubre la garantía y su pago?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel6" class="hidden p-4 bg-gray-100">
+                Hasta la restitución del inmueble.
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold pb-2 faq-header">Requisitos</h3>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel7', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Qué requisitos se necesitan para contratar?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel7" class="hidden p-4 bg-gray-100">
+                Ingresos demostrables en blanco. Antigüedad mínima requerida
+                varía según tipo de ingreso que demuestre: Relación de
+                dependencia 3 meses, Monotributo/Responsable Inscripto 1 año.
+              </div>
+            </div>
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel8', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Cuántas personas mínimas deben firmar la garantía y que
+                  deben presentar?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel8" class="hidden p-4 bg-gray-100">
+                Puede ser una única persona pero el 30% de sus ingresos
+                demostrables deben cubrir alquiler y expensas. Caso contrario,
+                deberá contar con al menos un co-solicitante.
+              </div>
+            </div>
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel9', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Cuál es la antigüedad laboral en blanco requerida?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel9" class="hidden p-4 bg-gray-100">
+                Mínimo 3 meses.
+              </div>
+            </div>
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel10', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Personas que trabajen en el mercado informal pueden
+                  alquilar?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel10" class="hidden p-4 bg-gray-100">
+                Sí, siempre que sean mínimo 2 personas y demuestren ingresos
+                informales o formales.
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold pb-2 faq-header">Costos</h3>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel11', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Costo del servicio de garantía?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel11" class="hidden p-4 bg-gray-100">
+                6 % del valor total del contrato más el valor de las expensas.
+                Descubrí las promociones de esta semana haciendo
+                <a href="#">click aquí</a>.
+              </div>
+            </div>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel12', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Qué porcentaje de mis ingresos son los que se toman en
+                  cuenta?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel12" class="hidden p-4 bg-gray-100">
+                Entre el 30% y el 50%.
+              </div>
+            </div>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel13', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Qué medios de pagos hay disponible?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel13" class="hidden p-4 bg-gray-100">
+                Efectivo, depósito, transferencia bancaria o tarjeta de crédito
+                mediante Mercado Pago.
+              </div>
+            </div>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel14', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Hay alguna promoción de pago?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel14" class="hidden p-4 bg-gray-100">
+                Descubrí todas las promociones de esta semana haciendo
+                <a href="#">click aquí</a>.
+              </div>
+            </div>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel15', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Cuándo paga el locatario nuestra garantía?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel15" class="hidden p-4 bg-gray-100">
+                A la firma del contrato de garantía.
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold pb-2 faq-header">
+              Firma de la Garantía
+            </h3>
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel16', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Dónde se debe firmar el contrato de garantía?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel16" class="hidden p-4 bg-gray-100">
+                Se puede firmar de forma presencial en la oficina Respaldar
+                (casa central) o de forma electrónica (100% virtual).
+              </div>
+            </div>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel17', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Se puede pasar por el domicilio de algún firmante?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel17" class="hidden p-4 bg-gray-100">
+                Sí, tiene un costo adicional (varía según la distancia).
+              </div>
+            </div>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel18', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Qué se debe firmar además del contrato de garantía?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel18" class="hidden p-4 bg-gray-100">
+                El contrato de locación.
+              </div>
+            </div>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel19', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿En dónde se firma el contrato de locación?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel19" class="hidden p-4 bg-gray-100">
+                Donde disponga el inmobiliario y/o propietario.
+              </div>
+            </div>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel20', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Siempre se contrata por intermedio de inmobiliaria?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel20" class="hidden p-4 bg-gray-100">
+                No, podría estar el caso de que sea dueño directo.
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold pb-2 faq-header">
+              Info Propietarios - Inmobiliaria
+            </h3>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel21', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left">
+                  En caso de coberturas, si el contrato de locación se abona en
+                  una inmobiliaria. ¿Con quién trata Respaldar?
+                </span>
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel21" class="hidden p-4 bg-gray-100">
+                Si la administración de la locación la lleva la inmobiliaria,
+                siempre la cobertura será a través de la inmobiliaria. En ese
+                caso, no solicitamos tener contacto con el propietario. En caso
+                de que la operación de alquiler se haya realizado directamente
+                con el propietario, la cobertura se tratará directamente con el
+                mismo.
+              </div>
+            </div>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel22', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left">
+                  En cuanto a la solicitud de garantía, ¿quién maneja el
+                  contacto con las partes inmobiliaria, inquilino y/o
+                  propietario?
+                </span>
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel22" class="hidden p-4 bg-gray-100">
+                En caso de que la operación sea a través de una inmobiliaria,
+                todo el contacto es mediante esta. En caso de que sea
+                directamente con un propietario, será a través del propietario.
+              </div>
+            </div>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel23', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left">
+                  ¿Por qué le sirve al propietario esta garantía?
+                </span>
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel23" class="hidden p-4 bg-gray-100">
+                El propietario tiene cobro garantizado desde el día uno y hasta
+                tanto le desocupen la propiedad. No tiene cargos de ninguna
+                índole, ni siquiera gastos judiciales por desalojo, todo corre
+                por cuenta de Respaldar. Además, tendrá a disposición un equipo
+                de profesionales abogados para realizar todo tipo de consultas
+                de forma gratuita.
+              </div>
+            </div>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel24', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Qué demora tiene el pago de Respaldar ante un
+                  incumplimiento?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel24" class="hidden p-4 bg-gray-100">
+                A partir del aviso, el pago se realiza dentro de las 72hs.
+              </div>
+            </div>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel25', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Cómo se debe gestionar el reclamo?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel25" class="hidden p-4 bg-gray-100">
+                Se debe informar la anomalía vía formulario web, que deberá ser
+                solicitado al departamento de legales (<a
+                  href="mailto:legales@respaldar.com.ar"
+                  >legales@respaldar.com.ar</a
+                >).
+              </div>
+            </div>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel26', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Tiene costo para el propietario?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel26" class="hidden p-4 bg-gray-100">Ninguno.</div>
+            </div>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel27', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left"
+                  >¿Qué sucede si no paga el inquilino?</span
+                >
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel27" class="hidden p-4 bg-gray-100">
+                Respaldar abona dentro de las 72hs al propietario.
+              </div>
+            </div>
+
+            <div class="border rounded-lg overflow-hidden">
+              <button
+                class="w-full flex items-center p-3 bg-respaldar text-white font-semibold gap-2"
+                onclick="togglePanel('panel28', this)"
+              >
+                <img
+                  src="img/icons/circle-question-regular.svg"
+                  alt="Pregunta"
+                  class="w-4 h-4"
+                />
+                <span class="flex-1 text-left">
+                  ¿Por qué le sirve al inmobiliario ofrecer nuestro producto?
+                </span>
+                <img
+                  src="img/icons/chevron-down-white.svg"
+                  alt="Desplegar"
+                  class="w-4 h-4 chevron-icon"
+                />
+              </button>
+              <div id="panel28" class="hidden p-4 bg-gray-100">
+                Es una herramienta fundamental por su eficacia, rapidez y
+                seguridad, evitando al propietario cualquier riesgo de
+                incobrabilidad.
+              </div>
+            </div>
+
+            <!-- end last panel -->
+          </div>
+        </div>
+
+        <script>
+          /*      function togglePanel(panelId, button) {
+            let panel = document.getElementById(panelId);
+            panel.classList.toggle("hidden");
+
+            let chevron = button.querySelector(".chevron-icon");
+            if (panel.classList.contains("hidden")) {
+              chevron.src = "img/icons/chevron-down-white.svg"; // Ícono cuando está cerrado
+            } else {
+              chevron.src = "img/icons/chevron-up-white.svg"; // Ícono cuando está abierto
+            }
+          } */
+        </script>
+        <!-- Mensaje cuando no hay resultados -->
+        <div id="noResultsMessage" class="hidden text-center text-black mt-4">
+          No se encontraron resultados para tu búsqueda. Para más información
+          contactate con nosotros.
+        </div>
+
+        <script>
+          document
+            .getElementById("searchInput")
+            .addEventListener("input", function () {
+              let searchQuery = this.value.toLowerCase();
+              let panels = document.querySelectorAll("#faqContainer > div");
+              let headers = document.querySelectorAll(".faq-header");
+              let noResultsMessage =
+                document.getElementById("noResultsMessage");
+              let hasResults = false;
+
+              panels.forEach((panel) => {
+                let questionText = panel
+                  .querySelector("button span")
+                  .textContent.toLowerCase();
+
+                if (questionText.includes(searchQuery)) {
+                  panel.style.display = ""; // Muestra la pregunta si coincide
+                  hasResults = true;
+                } else {
+                  panel.style.display = "none"; // Oculta la pregunta si no coincide
+                }
+              });
+
+              // Oculta los <h3> si hay una búsqueda activa
+              headers.forEach((header) => {
+                header.style.display = searchQuery ? "none" : "";
+              });
+
+              // Muestra u oculta el mensaje de "No Resultados"
+              noResultsMessage.style.display =
+                hasResults || searchQuery === "" ? "none" : "block";
+            });
+
+          function togglePanel(panelId, button) {
+            let panel = document.getElementById(panelId);
+            panel.classList.toggle("hidden"); // Alterna la visibilidad del panel
+
+            let chevronIcon = button.querySelector(".chevron-icon");
+            chevronIcon.classList.toggle("rotate-180");
+          }
+        </script>
+      </div>
+    </section>
+
+    <section class="bg-black">
+      <div class="bg-gray-200 rounded-b-[30px] md:rounded-b-[60px] py-10"></div>
+    </section>
+
+    <footer class="bg-black mt-auto py-10 text-sm">
+      <div class="container">
+        <div class="grid md:grid-cols-4">
+          <div class="text-white">
+            <h4 class="uppercase font-bold mb-1 text-respaldar">
+              Casa Central
+            </h4>
+            <hr class="w-10 mb-4" />
+            <p class="pb-4">
+              <strong>Colegiales</strong><br />
+              Jorge Newbery 3835 <br />
+              CABA, Argentina<br />
+              <strong>Teléfono:</strong> 4551-3338<br />
+              <strong>Whatsapp:</strong> 11-8059-0005<br />
+              <strong>Email:</strong> info@respaldar.com.ar<br />
+            </p>
+          </div>
+          <div class="text-white">
+            <h4 class="uppercase font-bold mb-1 text-respaldar">
+              Edificio Respaldar Ventas
+            </h4>
+            <hr class="w-10 mb-4" />
+            <p>
+              <strong>Caballito</strong><br />
+              Franklin 787 <br />
+              CABA, Argentina<br />
+              <strong>Teléfono:</strong> 4551-3338<br />
+              <strong>Whatsapp:</strong> 11-8059-0005<br />
+              <strong>Email:</strong> info@respaldar.com.ar<br />
+            </p>
+          </div>
+          <div class="text-white">
+            <h4 class="uppercase font-bold mb-1 text-respaldar">
+              Edificio Respaldar Admin
+            </h4>
+            <hr class="w-10 mb-4" />
+            <p>
+              <strong>Palermo</strong><br />
+              Soler 3850<br />
+              CABA, Argentina<br />
+              <strong>Teléfono:</strong> 4551-3338<br />
+              <strong>Whatsapp:</strong> 11-8059-0005<br />
+              <strong>Email:</strong> info@respaldar.com.ar<br />
+            </p>
+          </div>
+          <div class="text-white">
+            <h4 class="uppercase font-bold mb-1 text-respaldar">
+              Agentes Oficiales
+            </h4>
+            <hr class="w-10 mb-4" />
+            <p class="pb-4">
+              Gestioná tu Garantía Respaldar directamente con tu Agente Oficial.
+            </p>
+            <h4 class="uppercase font-bold mb-1 text-respaldar">
+              Mantenete Informado
+            </h4>
+            <hr class="w-10 mb-4" />
+            <p>
+              Seguinos en nuestras redes sociales y obtené toda la información
+              relevante.
+            </p>
+          </div>
+        </div>
+        <div class="flex text-white justify-center p-4">
+          © Copyright RESPALDAR de COMBRE S.A. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- START Botmaker Webchat-->
+    <script>
+      (function () {
+        let js = document.createElement("script");
+        js.type = "text/javascript";
+        js.async = true;
+        js.src = "https://go.botmaker.com/rest/webchat/p/PP5615QC7C/init.js";
+        document.body.appendChild(js);
+      })();
+    </script>
+    <!-- END Botmaker Webchat-->
+  </body>
+</html>

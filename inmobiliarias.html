@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Respaldar - Sistema de Garantía Para Alquilar</title>
+    <meta
+      name="description"
+      content="Tu garantía para alquilar al mejor precio del mercado. Preaprobación Express sin costo. Requisitos mínimos."
+    />
+    <meta
+      name="keywords"
+      content="Garantias, Garantías, Fianzas, Sistema de garantia para alquiar, Alquiler, Garantes, Respaldar, Respaldar Garantías, garantias, garantia, garantía para alquilar, garantia para alquilar, garantia alquiler, garantia propietaria"
+    />
+    <meta name="geo.region" content="AR" />
+    <meta name="geo.placename" content="Buenos Aires" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.respaldar.com.ar/" />
+    <meta
+      property="og:title"
+      content="Respaldar - Sistema de Garantía Para Alquilar"
+    />
+    <meta
+      property="og:description"
+      content="Tu garantía para alquilar al mejor precio del mercado. Preaprobación Express sin costo. Requisitos mínimos."
+    />
+    <meta
+      property="og:image"
+      content="https://www.respaldar.com.ar/img/wp-thumb.png"
+    />
+
+    <!-- Twitter / Facebook-->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.respaldar.com.ar/" />
+    <meta
+      property="twitter:title"
+      content="Respaldar - Sistema de Garantía Para Alquilar"
+    />
+    <meta
+      property="twitter:description"
+      content="Tu garantía para alquilar al mejor precio del mercado. Preaprobación Express sin costo. Requisitos mínimos."
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.respaldar.com.ar/img/banner-redes.png"
+    />
+
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon" />
+
+    <!-- Tailwind-->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- Main Css -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="bg-black relative">
+      <nav
+        class="mx-auto flex items-center justify-between py-3 md:py-6"
+        aria-label="Global"
+      >
+        <div class="flex container justify-between">
+          <div class="flex lg:flex-1 items-center">
+            <a href="index.html"
+              ><img
+                src="img/logo-16.svg"
+                alt="logo"
+                class="w-[140px] md:w-[220px] h-auto md:h-auto"
+            /></a>
+          </div>
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-respaldar"
+              id="menu-button"
+            >
+              <span class="sr-only">Open main menu</span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12 md:items-center">
+            <a
+              href="index.html"
+              class="text-sm font-semibold leading-6 text-white cursor-pointer"
+              >INICIO</a
+            >
+            <div class="relative group">
+              <div
+                class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white cursor-pointer"
+                onclick="toggleSubmenu(this)"
+              >
+                GARANTÍA
+                <img
+                  src="img/icons/chevron-down.svg"
+                  alt="chevron-down"
+                  class="h-5 w-5 flex-none text-respaldar"
+                />
+              </div>
+
+              <!-- Sub-Garantía -->
+              <div
+                class="submenu absolute left-0 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 hidden"
+              >
+                <div class="p-4">
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="pre-aprobado-express-sin-cargo"
+                        class="block font-semibold text-gray-900"
+                        >Solicitar Garantía<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Rápida y al mejor precio del mercado
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="calcularcosto.html"
+                        class="block font-semibold text-gray-900"
+                        >Calcular Costos<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Aprovechá nuestras promociones semanales
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="/calcularcosto.html"
+                        class="block font-semibold text-gray-900"
+                        >Mí Garantía<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Seguí el proceso de tu garantía de cerca
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/phone.svg" class="w-4" alt="phone" />
+                    4551-3338
+                  </a>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/whatsapp.svg" class="w-4" alt="phone" />
+                    Respy IA
+                  </a>
+                </div>
+              </div>
+              <!-- Sub-Garantia END-->
+            </div>
+
+            <div class="relative group">
+              <div
+                class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white cursor-pointer"
+                onclick="toggleSubmenu(this)"
+              >
+                INFORMACIÓN
+                <img
+                  src="img/icons/chevron-down.svg"
+                  alt="chevron-down"
+                  class="h-5 w-5 flex-none text-respaldar"
+                />
+              </div>
+              <!-- Sub-Info -->
+              <div
+                class="submenu absolute left-0 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 hidden"
+              >
+                <div class="p-4">
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900"
+                        >Inquilinos<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Rápida y al mejor precio del mercado
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="/calcularcosto"
+                        class="block font-semibold text-gray-900"
+                        >Propietarios<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Aprovechá nuestras promociones semanales
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="/calcularcosto"
+                        class="block font-semibold text-gray-900"
+                        >Inmobiliarias<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Aprovechá nuestras promociones semanales
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="/calcularcosto"
+                        class="block font-semibold text-gray-900"
+                        >Preguntas Frecuentes (FAQs)<span
+                          class="absolute inset-0"
+                        ></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Aprovechá nuestras promociones semanales
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/phone.svg" class="w-4" alt="phone" />
+                    4551-3338
+                  </a>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/whatsapp.svg" class="w-4" alt="phone" />
+                    Respy IA
+                  </a>
+                </div>
+              </div>
+              <!-- Sub-Info END-->
+            </div>
+            <div class="relative group">
+              <div
+                class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white cursor-pointer"
+                onclick="toggleSubmenu(this)"
+              >
+                INMOBILIARIAS
+                <img
+                  src="img/icons/chevron-down.svg"
+                  alt="chevron-down"
+                  class="h-5 w-5 flex-none text-respaldar"
+                />
+              </div>
+              <!-- Sub-Inmo -->
+              <div
+                class="submenu absolute left-0 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 hidden"
+              >
+                <div class="p-4">
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="pre-aprobado-express-sin-cargo"
+                        class="block font-semibold text-gray-900"
+                        >Adheridas<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Rápida y al mejor precio del mercado
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-respaldar"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="/calcularcosto.html"
+                        class="block font-semibold text-gray-900"
+                        >Agentes Oficiales<span class="absolute inset-0"></span
+                      ></a>
+                      <p class="mt-1 text-gray-600">
+                        Seguí el proceso de tu garantía de cerca
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/phone.svg" class="w-4" alt="phone" />
+                    4551-3338
+                  </a>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <img src="img/icons/whatsapp.svg" class="w-4" alt="phone" />
+                    Respy IA
+                  </a>
+                </div>
+              </div>
+              <!-- Sub-Inmo END-->
+            </div>
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end md:items-center">
+            <a href="#" class="text-sm font-semibold leading-6 text-white"
+              >Acceder
+              <span aria-hidden="true" class="text-respaldar pl-2">→</span></a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <nav id="mobile-nav" class="">
+        <ul style="touch-action: pan-y">
+          <li class="menu-active"><a href="index.html">Inicio</a></li>
+          <li class="menu-has-children">
+            <a href="#" class="submenu-toggle">Garantía</a>
+            <ul class="submenu">
+              <li>
+                <a href="pre-aprobado-express-sin-cargo">Solicitar Garantía</a>
+              </li>
+              <li><a href="calcularcosto.html">Calcular Costos</a></li>
+              <li><a href="busca-tu-solicitud">Mi Garantía</a></li>
+            </ul>
+          </li>
+          <li class="menu-has-children">
+            <a href="#" class="submenu-toggle">Información</a>
+            <ul class="submenu">
+              <li><a href="inquilinos.html">Inquilinos</a></li>
+              <li><a href="propietarios.html">Propietarios</a></li>
+              <li><a href="inmobiliarias.html">Inmobiliarias</a></li>
+              <li><a href="faq.html">Preguntas Frecuentes</a></li>
+            </ul>
+          </li>
+          <li class="menu-has-children">
+            <a href="#" class="submenu-toggle">Inmobiliarias</a>
+            <ul class="submenu">
+              <li><a href="listadoinmobiliarias.html">Adheridas</a></li>
+              <li><a href="agenteoficial.html">Agentes Oficiales</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="log-in">
+          <a
+            href="https://sistema.respaldar.com.ar/admin/login/agente-oficial"
+            target="_blank"
+          >
+            <i class="fas fa-user-tie"></i> Acceder
+          </a>
+        </div>
+      </nav>
+
+      <div
+        style="
+          position: fixed;
+          top: 1px;
+          left: 1px;
+          width: 1px;
+          height: 0;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border-width: 0;
+          display: none;
+        "
+      ></div>
+    </header>
+
+    <section
+      id="hero"
+      class="flex flex-col items-center bg-respaldar bg-center pb-5 md:pb-0 md:pt-[30px]"
+    >
+      <div class="container mt:[100px]">
+        <div class="mt-8 lg:mt-0">
+          <h1
+            class="mt-2 mb-8 text-4xl font-bold tracking-tight md:text-4xl xl:text-4xl text-black uppercase"
+          >
+            Beneficios para <br /><span
+              class="text-white xl:text-6xl capitalize"
+              >Inmobiliarias</span
+            >
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="intro" class="bg-gray-200 py-1 pb-10">
+      <div class="container py-8">
+        <!-- <header class="gap-5">
+          <h2 class="text-4xl font-black pb-2">Respaldar Garantía</h2>
+          <p class="text-lg">
+            Tu mejor herramienta para capitalizar clientes con alta factibilidad
+            de pago. Garantizamos 100% del contrato de locación hasta
+            restitución del inmueble.
+          </p>
+        </header> -->
+
+        <div class="flex flex-wrap pt-5">
+          <div class="lg:w-1/3 flex items-stretch md:p-2">
+            <div class="bg-respaldar p-6 rounded shadow-md text-white">
+              <h3 class="text-2xl font-semibold mb-4">¿Por qué Elegirnos?</h3>
+              <p class="mb-4">
+                Contamos con los mejores beneficios del mercado tanto para el
+                inmobiliario, propietario e inquilino.
+              </p>
+              <div class="text-center">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=541168726868&amp;text=Hola%2C+quiero+saber+m%C3%A1s+sobre+los+beneficios&amp;type=phone_number&amp;app_absent=0"
+                  target="_blank"
+                  class="bg-green-700 text-white py-2 px-4 rounded-full inline-flex items-center hover:bg-green-600"
+                >
+                  Más información
+                  <i class="bx bx-chevron-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:w-2/3 flex items-stretch">
+            <div class="flex flex-col justify-center w-full">
+              <div class="flex flex-wrap">
+                <div class="xl:w-1/3 flex items-stretch md:p-2">
+                  <div class="bg-white p-6 rounded shadow-md mt-4 xl:mt-0">
+                    <img
+                      src="img/icons/shield-halved-solid.svg"
+                      alt="cobertura"
+                      class="max-h-10 pb-2"
+                    />
+                    <h4 class="text-xl font-semibold mb-2 text-respaldar">
+                      Cobertura
+                    </h4>
+                    <p>
+                      Alquiler, expensas ordinarias, impuesto municipal y agua.
+                      Gastos Judiciales
+                    </p>
+                  </div>
+                </div>
+                <div class="xl:w-1/3 flex items-stretch md:p-2">
+                  <div class="bg-white p-6 rounded shadow-md mt-4 xl:mt-0">
+                    <img
+                      src="img/icons/handshake-angle-solid.svg"
+                      alt="cobertura"
+                      class="max-h-10 pb-2"
+                    />
+                    <h4 class="text-xl font-semibold mb-2 text-respaldar">
+                      Beneficios
+                    </h4>
+                    <p>
+                      Los mejores beneficios del mercado, Puntos Respaldar &amp;
+                      Sistema de Referidos.
+                    </p>
+                  </div>
+                </div>
+                <div class="xl:w-1/3 flex items-stretch md:p-2">
+                  <div class="bg-white p-6 rounded shadow-md mt-4 xl:mt-0">
+                    <img
+                      src="img/icons/building-solid.svg"
+                      alt="cobertura"
+                      class="max-h-10 pb-2"
+                    />
+                    <h4 class="text-xl font-semibold mb-2 text-respaldar">
+                      Salas de Firmas
+                    </h4>
+                    <p>Sin cargo. Diseñadas y equipadas con alta calidad.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End .content-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="salas-de-firmas">
+      <div class="container">
+        <h2
+          class="text-2xl font-black md:font-bold text-respaldar md:w-2/3 md:text-3xl lg:text-4xl pb-5"
+        >
+          Nuestras Salas de Firmas sin Cargo
+        </h2>
+
+        <p class="pb-5">
+          Contamos con 6 salas de firmas a tu disposición para que puedas
+          aprovechar sin ningún tipo de costo.
+        </p>
+        <header class="pb-5">
+          <h3
+            class="text-white font-bold text-lg bg-black px-2 inline-block"
+          >
+            ¿Qué podrás encontrar en ellas?
+          </h3>
+        </header>
+        <div class="text-sm flex flex-wrap gap-2 pb-5">
+          <span
+            class="inline-flex items-center px-2 py-1 bg-respaldar text-white rounded-md"
+          >
+            Servicio de Secretaría
+          </span>
+          <span
+            class="inline-flex items-center px-2 py-1 bg-respaldar text-white rounded-md"
+          >
+            Máquina Cuenta Billetes
+          </span>
+          <span
+            class="inline-flex items-center px-2 py-1 bg-respaldar text-white rounded-md"
+          >
+            Café de Cápsula
+          </span>
+          <span
+            class="inline-flex items-center px-2 py-1 bg-respaldar text-white rounded-md"
+          >
+            Climatización
+          </span>
+          <span
+            class="inline-flex items-center px-2 py-1 bg-respaldar text-white rounded-md"
+          >
+            Impresión de Contratos
+          </span>
+          <span
+            class="inline-flex items-center px-2 py-1 bg-respaldar text-white rounded-md"
+          >
+            Baño Privado
+          </span>
+          <span
+            class="inline-flex items-center px-2 py-1 bg-respaldar text-white rounded-md"
+          >
+            Wifi de Alta Velocidad
+          </span>
+          <span
+            class="inline-flex items-center px-2 py-1 bg-respaldar text-white rounded-md"
+          >
+            Recepción
+          </span>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3 pb-12">
+          <article
+            class="border border-respaldar rounded-[0.25rem] p-2 text-black shadow-sm"
+          >
+            <h4 class="font-bold text-sm mb-2 text-respaldar">
+              Sala de Firma Smart
+            </h4>
+            <p class="text-xs">
+              <strong
+                ><span class="font-black text-respaldar mr-1">!</span>
+                Característica Especial:</strong
+              >
+              Estacionamiento propio, Smart TV, Unidades de Carga.
+            </p>
+            <p class="text-xs flex items-center">
+              <img
+                src="img/icons/location-dot-solid.svg"
+                alt="location"
+                class="w-2 mr-1"
+              />
+              <span><strong>Ubicación:</strong> Caballito</span>
+            </p>
+          </article>
+          <article
+            class="border border-respaldar rounded-[0.25rem] p-2 text-black shadow-sm"
+          >
+            <h4 class="font-bold text-sm mb-2 text-respaldar">Sala de Firma Bosque</h4>
+            <p class="text-xs">
+              <strong
+                ><span class="font-black text-respaldar mr-1">!</span>
+                Característica Especial:</strong
+              >
+              Estacionamiento propio
+            </p>
+            <p class="text-xs flex items-center">
+              <img
+                src="img/icons/location-dot-solid.svg"
+                alt="location"
+                class="w-3 mr-1"
+              />
+              <span><strong>Ubicación:</strong> Caballito</span>
+            </p>
+          </article>
+          <article
+            class="border border-respaldar rounded-[0.25rem] p-2 text-black shadow-sm"
+          >
+            <h4 class="font-bold text-sm mb-2 text-respaldar">Sala de Firma Palmar</h4>
+            <p class="text-xs">
+              <strong
+                ><span class="font-black text-respaldar mr-1">!</span>
+                Característica Especial:</strong
+              >
+              Estacionamiento propio
+            </p>
+            <p class="text-xs flex items-center">
+              <img
+                src="img/icons/location-dot-solid.svg"
+                alt="location"
+                class="w-3 mr-1"
+              />
+              <span><strong>Ubicación:</strong> Caballito</span>
+            </p>
+          </article>
+          <article
+            class="border border-respaldar rounded-[0.25rem] p-2 text-black shadow-sm"
+          >
+            <h4 class="font-bold text-sm mb-2 text-respaldar">Sala de Firma Zen</h4>
+            <p class="text-xs flex items-center">
+              <img
+                src="img/icons/location-dot-solid.svg"
+                alt="location"
+                class="w-3 mr-1"
+              />
+              <span><strong>Ubicación:</strong> Caballito</span>
+            </p>
+          </article>
+          <article
+            class="border border-respaldar rounded-[0.25rem] p-2 text-black shadow-sm"
+          >
+            <h4 class="font-bold text-sm mb-2 text-respaldar">Sala de Firma City</h4>
+            <p class="text-xs flex items-center">
+              <img
+                src="img/icons/location-dot-solid.svg"
+                alt="location"
+                class="w-3 mr-1"
+              />
+              <span><strong>Ubicación:</strong> Caballito</span>
+            </p>
+          </article>
+          <article
+            class="border border-respaldar rounded-[0.25rem] p-2 text-black shadow-sm"
+          >
+            <h4 class="font-bold text-sm mb-2 text-respaldar">Sala de Firma</h4>
+            <p class="text-xs flex items-center">
+              <img
+                src="img/icons/location-dot-solid.svg"
+                alt="location"
+                class="w-3 mr-1"
+              />
+              <span><strong>Ubicación:</strong> Caballito</span>
+            </p>
+          </article>
+        </div>
+
+        <!-- Video Embed -->
+        <div
+          class="relative pb-[56.25%] overflow-hidden rounded-lg shadow-lg mb-10"
+        >
+          <iframe
+            class="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/-r1DV7UmrlY?si=NNotvDCP2XMSF50s"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios">
+      <div class="container">
+        <h2
+          class="text-2xl font-bold text-respaldar md:w-2/3 md:text-3xl lg:text-4xl pb-10"
+        >
+          Más Beneficios para vos
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/user-clock-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>Aceptación y entrega de Garantía en menos de 24 horas.</p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/folder-open-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>
+              Presentación de carpeta con estudio y factibilidad de pago del
+              locatario para legajo del inmobiliario.
+            </p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/file-signature-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>
+              Presentación y entrega del contrato de Garantía firmado por las
+              partes.
+            </p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/comments-dollar-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>Pago inmediato por incumplimiento.</p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/creative-commons-zero-brands-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>Costo cero para el inmobiliario y propietario.</p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/database-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>
+              Base de datos con clientes de Respaldar con garantías
+              pre-aprobadas.
+            </p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/user-shield-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>Control financiero y crediticio del interesado en alquilar.</p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/car-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>
+              Firma del contrato de locación por un representante a domicilio.
+            </p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/comment-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>Coordinación de firma adaptable a tus necesidades.</p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/user-tie-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>
+              El contacto con el propietario siempre lo mantiene el
+              inmobiliario.
+            </p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/gifts-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>Suma puntos con cada garantía gestionada.</p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/globe-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>
+              Plataforma y asesoramiento de Firma Electrónica sin costo para los
+              contratos que utilicen garantía Respaldar.
+            </p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/signature-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>Salas de Firmas sin cargo a tu disposición.</p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/building-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>Sala de Co-Working sin cargo a tu disposición.</p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/circle-play-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>Sala Smart sin cargo a tu disposición.</p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/house-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>Publicación de propiedades en Portal Respaldar sin cargo.</p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/gavel-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>
+              Departamento de legales a disposición para consultas sin cargo.
+            </p>
+          </div>
+
+          <div
+            class="flex items-center space-x-3 wow bounceInUp border border-[#009045] p-4 rounded-lg h-[120px] hover:shadow-sm hover:shadow-respaldar"
+            data-wow-duration="1.4s"
+          >
+            <img
+              src="img/icons/earth-americas-solid.svg"
+              alt="icono"
+              class="max-w-10 max-h-10"
+            />
+            <p>Página Web sin cargo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-black">
+      <div class="bg-gray-200 rounded-b-[30px] md:rounded-b-[60px] py-10"></div>
+    </section>
+
+    <footer class="bg-black mt-auto py-10 text-sm">
+      <div class="container">
+        <div class="grid md:grid-cols-4">
+          <div class="text-white">
+            <h4 class="uppercase font-bold mb-1 text-respaldar">
+              Casa Central
+            </h4>
+            <hr class="w-10 mb-4" />
+            <p class="pb-4">
+              <strong>Colegiales</strong><br />
+              Jorge Newbery 3835 <br />
+              CABA, Argentina<br />
+              <strong>Teléfono:</strong> 4551-3338<br />
+              <strong>Whatsapp:</strong> 11-8059-0005<br />
+              <strong>Email:</strong> info@respaldar.com.ar<br />
+            </p>
+          </div>
+          <div class="text-white">
+            <h4 class="uppercase font-bold mb-1 text-respaldar">
+              Edificio Respaldar Ventas
+            </h4>
+            <hr class="w-10 mb-4" />
+            <p>
+              <strong>Caballito</strong><br />
+              Franklin 787 <br />
+              CABA, Argentina<br />
+              <strong>Teléfono:</strong> 4551-3338<br />
+              <strong>Whatsapp:</strong> 11-8059-0005<br />
+              <strong>Email:</strong> info@respaldar.com.ar<br />
+            </p>
+          </div>
+          <div class="text-white">
+            <h4 class="uppercase font-bold mb-1 text-respaldar">
+              Edificio Respaldar Admin
+            </h4>
+            <hr class="w-10 mb-4" />
+            <p>
+              <strong>Palermo</strong><br />
+              Soler 3850<br />
+              CABA, Argentina<br />
+              <strong>Teléfono:</strong> 4551-3338<br />
+              <strong>Whatsapp:</strong> 11-8059-0005<br />
+              <strong>Email:</strong> info@respaldar.com.ar<br />
+            </p>
+          </div>
+          <div class="text-white">
+            <h4 class="uppercase font-bold mb-1 text-respaldar">
+              Agentes Oficiales
+            </h4>
+            <hr class="w-10 mb-4" />
+            <p class="pb-4">
+              Gestioná tu Garantía Respaldar directamente con tu Agente Oficial.
+            </p>
+            <h4 class="uppercase font-bold mb-1 text-respaldar">
+              Mantenete Informado
+            </h4>
+            <hr class="w-10 mb-4" />
+            <p>
+              Seguinos en nuestras redes sociales y obtené toda la información
+              relevante.
+            </p>
+          </div>
+        </div>
+        <div class="flex text-white justify-center p-4">
+          © Copyright RESPALDAR de COMBRE S.A. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- START Botmaker Webchat-->
+    <script>
+      (function () {
+        let js = document.createElement("script");
+        js.type = "text/javascript";
+        js.async = true;
+        js.src = "https://go.botmaker.com/rest/webchat/p/PP5615QC7C/init.js";
+        document.body.appendChild(js);
+      })();
+    </script>
+    <!-- END Botmaker Webchat-->
+  </body>
+</html>
