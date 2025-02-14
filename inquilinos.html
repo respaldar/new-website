@@ -3,17 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Respaldar - Sistema de Garantía Para Alquilar</title>
+    <title>
+      Respaldar - Somos tu Garantía Para Alquilar Rápida y Sin Complicaciones
+    </title>
     <meta
       name="description"
-      content="Tu garantía para alquilar al mejor precio del mercado. Preaprobación Express sin costo. Requisitos mínimos."
+      content="Obtén una garantía para alquilar rápida, segura y sin complicaciones. Preaprobación Express gratuita y sin necesidad de garantes propietarios. ¡Rápido y fácil!"
     />
-    <meta
-      name="keywords"
-      content="Garantias, Garantías, Fianzas, Sistema de garantia para alquiar, Alquiler, Garantes, Respaldar, Respaldar Garantías, garantias, garantia, garantía para alquilar, garantia para alquilar, garantia alquiler, garantia propietaria"
-    />
-    <meta name="geo.region" content="AR" />
-    <meta name="geo.placename" content="Buenos Aires" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -47,27 +43,12 @@
       content="https://www.respaldar.com.ar/img/banner-redes.png"
     />
 
-    <!-- Google Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      as="style"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- Favicons -->
     <link href="img/favicon.png" rel="icon" />
 
-    <!-- Tailwind-->
-    <link href="style.css" rel="stylesheet" />
-
-    <!-- Main Css -->
+    <!-- Css -->
     <link href="css/style.css" rel="stylesheet" />
+    <link href="style.min.css" rel="stylesheet" />
   </head>
   <body>
     <header class="bg-black relative">
@@ -77,22 +58,27 @@
       >
         <div class="flex container justify-between">
           <div class="flex lg:flex-1 items-center">
-            <a href="index.html"
-              ><img
+            <a href="index.html">
+              <img
                 src="img/logo.svg"
                 alt="logo"
-                class="w-[140px] md:w-[220px] h-auto md:h-auto"
-            /></a>
+                width="220"
+                height="40"
+                class="w-[140px] md:w-[220px] h-auto"
+              />
+            </a>
           </div>
           <div class="flex lg:hidden">
             <button
               type="button"
               class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-respaldar"
               id="menu-button"
+              aria-expanded="false"
             >
-              <span class="sr-only">Open main menu</span
+              <span class="sr-only">Abrir Menu principal</span
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
+                alt="menu"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
@@ -141,6 +127,7 @@
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
+                        alt="garantia"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
@@ -223,12 +210,14 @@
                   <a
                     href="tel:+541145513338"
                     class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                    aria-label="Llamar a (011) 4551-3338"
                   >
                     <img src="img/icons/phone.svg" class="w-4" alt="phone" />
                     4551-3338
                   </a>
                   <a
                     href="https://api.whatsapp.com/send/?phone=5491180590005&text=Quiero+obtener+informacion&type=phone_number&app_absent=0"
+                    aria-label="Enviar un mensaje por Whatsapp a +54 9 11 8059-0005"
                     class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                   >
                     <img src="img/icons/whatsapp.svg" class="w-4" alt="phone" />
@@ -361,12 +350,14 @@
                   <a
                     href="tel:+541145513338"
                     class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                    aria-label="Llamar a (011) 4551-3338"
                   >
                     <img src="img/icons/phone.svg" class="w-4" alt="phone" />
                     4551-3338
                   </a>
                   <a
                     href="https://api.whatsapp.com/send/?phone=5491180590005&text=Quiero+obtener+informacion&type=phone_number&app_absent=0"
+                    aria-label="Enviar un mensaje por Whatsapp a +54 9 11 8059-0005"
                     class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                   >
                     <img src="img/icons/whatsapp.svg" class="w-4" alt="phone" />
@@ -448,12 +439,14 @@
                   <a
                     href="tel:+541145513338"
                     class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                    aria-label="Llamar a (011) 4551-3338"
                   >
                     <img src="img/icons/phone.svg" class="w-4" alt="phone" />
                     4551-3338
                   </a>
                   <a
                     href="https://api.whatsapp.com/send/?phone=5491180590005&text=Quiero+obtener+informacion&type=phone_number&app_absent=0"
+                    aria-label="Enviar un mensaje por Whatsapp a +54 9 11 8059-0005"
                     class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                   >
                     <img src="img/icons/whatsapp.svg" class="w-4" alt="phone" />
@@ -468,9 +461,11 @@
             <a
               href="https://sistema.respaldar.com.ar/admin/login/agente-oficial"
               target="_blank"
-              class="text-sm font-semibold leading-6 text-white"
-              >Acceder
-              <span aria-hidden="true" class="text-respaldar pl-2">→</span></a
+              class="text-sm font-semibold leading-6 text-white border-[1.5px] border-respaldar py-1 px-4 rounded-full"
+              >Solicitá tu Garantía
+              <span aria-hidden="true" class="text-respaldar pl-2 font-black"
+                >→</span
+              ></a
             >
           </div>
         </div>
@@ -561,9 +556,9 @@
       class="flex flex-col items-center bg-respaldar bg-center pb-5 md:pb-0 md:pt-[30px]"
     >
       <div class="container">
-        <div class="mt-8 lg:mt-0">
+        <div class="mt-8 md:mt-0 lg:mt-0">
           <h1
-            class="mt-2 mb-8 text-4xl font-bold tracking-tight md:text-4xl xl:text-4xl text-black uppercase"
+            class="mt-2 mb-2 md:mb-8 text-4xl font-bold tracking-tight md:text-4xl xl:text-4xl text-black uppercase text-center"
           >
             Beneficios para <br /><span
               class="text-white xl:text-6xl capitalize"
@@ -574,139 +569,107 @@
       </div>
     </section>
 
-    <section id="beneficios" class="bg-gray-200 pt-16 pb-8">
+    <section class="bg-gray-200 py-10">
       <div class="container">
         <h2
-          class="text-3xl font-black text-gray-900 dark:text-white md:text-5xl text-center"
+          class="text-respaldar font-bold text-2xl md:text-4xl text-center py-5 md:pt-10 md:pb-5"
         >
-          <span
-            class="text-transparent bg-clip-text bg-gradient-to-r from-black to-[#009045]"
-          >
-            Promociones de esta semana
-          </span>
+          ¿Por qué elegir Respaldar Garantía?
         </h2>
 
-        <div class="py-8 md:py-12 justify-between items-center">
-          <div
-            class="grid gap-6 grid-cols-2 md:grid-cols-4 justify-center items-center"
-          >
-            <article
-              class="bg-gray-200 border-solid border-[2px] border-black rounded-[15px_30px] w-[150px] h-[100px] md:h-[170px] md:w-[240px] flex items-center justify-center p-2 shadow-md md:shadow-none md:hover:shadow-sm md:hover:shadow-black"
-            >
-              <div>
-                <img
-                  src="img/30off.webp"
-                  alt="30-off"
-                  class="w-[110px] md:w-44"
-                />
-              </div>
-            </article>
-
-            <article
-              class="bg-gray-200 border-solid border-[2px] border-black md:border-[#004822] rounded-[15px_30px] w-[150px] h-[100px] md:h-[170px] md:w-[240px] flex items-center justify-center p-2 shadow-md md:shadow-none md:hover:shadow-sm md:hover:shadow-[#004822]"
-            >
-              <div>
-                <img
-                  src="img/15off.webp"
-                  alt="30-off"
-                  class="w-[110px] md:w-44"
-                />
-              </div>
-            </article>
-
-            <article
-              class="bg-gray-200 border-solid border-[2px] border-black md:border-[#007034] rounded-[15px_30px] w-[150px] h-[100px] md:h-[170px] md:w-[240px] flex items-center justify-center p-2 shadow-md md:shadow-none md:hover:shadow-sm md:hover:shadow-[#007034]"
-            >
-              <div>
-                <img
-                  src="img/6cuotas.webp"
-                  alt="30-off"
-                  class="w-[110px] md:w-44"
-                />
-              </div>
-            </article>
-
-            <article
-              class="bg-gray-200 border-solid border-[2px] border-black md:border-respaldar rounded-[15px_30px] w-[150px] h-[100px] md:h-[170px] md:w-[240px] flex items-center justify-center p-2 shadow-md md:shadow-none md:hover:shadow-sm md:hover:shadow-respaldar"
-            >
-              <div>
-                <img
-                  src="img/financiacion.webp"
-                  alt="30-off"
-                  class="w-[130px] md:w-48"
-                />
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="flex justify-center">
-          <a
-            class="bg-black text-white font-bold py-3 px-6 rounded-md text-lg shadow-md hover:bg-respaldar transition"
-            href="calcularcosto.html"
-            >Calculá el valor de tu garantía</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-gray-200 py-8">
-      <div class="container">
-        <h2 class="text-respaldar font-bold text-2xl md:text-4xl text-center">
-          Beneficios pensados para vos
-        </h2>
-
-        <div class="grid md:grid-cols-3 md:gap-8 gap-5 pt-12">
-          <article class="flex items-start gap-4">
-            <img src="img/icons/clock-solid.svg" class="w-8" alt="icon" />
-            <div>
-              <h4 class="font-bold text-lg mb-2">
-                Preaprobación Express sin Cargo
-              </h4>
-              <p class="text-sm leading-6">
-                En menos de 2 horas podés saber si pre-calificas para nuestra
-                garantía, sin ningún tipo de costo.
-              </p>
-            </div>
-          </article>
-
-          <article class="flex items-start gap-4">
-            <img src="img/icons/bolt-solid.svg" class="w-8" alt="icon" />
-            <div>
-              <h4 class="font-bold text-lg mb-2">
-                Rapidez en Resolución de Garantía
-              </h4>
-              <p class="text-sm leading-6">
-                Contamos con un equipo profesional dedicado a cada legajo.
-              </p>
-            </div>
-          </article>
-
+        <div class="grid md:grid-cols-3 md:gap-8 gap-5 pt-6 md:pt-12">
           <article>
             <div class="float-left">
-              <img
-                src="img/icons/money-bill-wave-solid.svg"
-                class="w-8"
-                alt="icon"
-              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#009045"
+                class="size-10"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
             </div>
-            <h4 class="ml-14 font-bold mb-4 text-lg">
+            <h3 class="ml-14 font-bold mb-4 text-lg">
+              Preaprobación Express sin Cargo
+            </h3>
+            <p class="text-sm ml-14 leading-6 mb-0">
+              En menos de 2 horas podés saber si pre-calificas para nuestra
+              garantía, sin ningún tipo de costo.
+            </p>
+          </article>
+          <article>
+            <div class="float-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#009045"
+                class="size-10"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 8.689c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061A1.125 1.125 0 0 1 3 16.811V8.69ZM12.75 8.689c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061a1.125 1.125 0 0 1-1.683-.977V8.69Z"
+                />
+              </svg>
+            </div>
+            <h3 class="ml-14 font-bold mb-4 text-lg">
+              Rapidez en Resolución de Garantía
+            </h3>
+            <p class="text-sm ml-14 leading-6 mb-0">
+              Contamos con un equipo profesional dedicado a cada legajo.
+            </p>
+          </article>
+          <article>
+            <div class="float-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#009045"
+                class="size-10"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+            </div>
+            <h3 class="ml-14 font-bold mb-4 text-lg">
               Sin Costos Hasta Conseguir el Alquiler.
-            </h4>
+            </h3>
             <p class="text-sm ml-14 leading-6 mb-0">
               Nuestra garantía se abona únicamente cuando tengas vayas a hacer
               uso de ella y ya tengas una propiedad reservada.
             </p>
           </article>
-
           <article>
             <div class="float-left">
-              <img
-                src="img/icons/circle-check-solid.svg"
-                class="w-8"
-                alt="icon"
-              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#009045"
+                class="size-10"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
             </div>
-            <h4 class="ml-14 font-bold mb-4 text-lg">Mínimos Requisitos</h4>
+            <h3 class="ml-14 font-bold mb-4 text-lg">Mínimos Requisitos</h3>
             <p class="text-sm ml-14 leading-6 mb-0">
               Nuestra garantía es apta para todas las personas.
             </p>
@@ -714,29 +677,50 @@
 
           <article>
             <div class="float-left">
-              <img
-                src="img/icons/magnifying-glass-solid-green.svg"
-                class="w-8"
-                alt="icon"
-              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#009045"
+                class="size-10"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
             </div>
-            <h4 class="ml-14 font-bold mb-4 text-lg">
+            <h3 class="ml-14 font-bold mb-4 text-lg">
               Te ayudamos a encontrar tu propiedad
-            </h4>
+            </h3>
             <p class="text-sm ml-14 leading-6 mb-0">
-              Contamos con nuestro portal de propiedades propio donde las
-              inmobiliarias de confianza pertenecientes a la Red Respaldar
-              publican su oferta.
+              Contamos con un portal propio donde las inmobiliarias de la Red
+              Respaldar publican sus propiedades.
             </p>
           </article>
 
           <article>
             <div class="float-left">
-              <img src="img/icons/comment-solid.svg" class="w-8" alt="icon" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#009045"
+                class="size-10"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+                />
+              </svg>
             </div>
-            <h4 class="ml-14 font-bold mb-4 text-lg">
+            <h3 class="ml-14 font-bold mb-4 text-lg">
               Comunicación con las Partes Involucradas
-            </h4>
+            </h3>
             <p class="text-sm ml-14 leading-6 mb-0">
               Nos comunicamos con la inmobiliaria o propietario para informar
               procesos y evacuar dudas.
@@ -745,20 +729,29 @@
 
           <article>
             <div class="float-left">
-              <img
-                src="img/icons/hourglass-half-solid.svg"
-                class="w-8"
-                alt="icon"
-              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#009045"
+                class="size-10"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z"
+                />
+              </svg>
             </div>
-            <h4 class="ml-14 font-bold mb-4 text-lg">No pierdas tiempo</h4>
+            <h3 class="ml-14 font-bold mb-4 text-lg">No pierdas tiempo</h3>
             <p class="text-sm ml-14 leading-6 mb-0">
               Agilidad en las resoluciones y rápida gestión para firma de
               contrato de locación.
             </p>
           </article>
 
-          <article>
+          <!--      <article>
             <div class="float-left">
               <img src="img/icons/percent-solid.svg" class="w-8" alt="icon" />
             </div>
@@ -769,8 +762,8 @@
               Pagando la totalidad de contado podés acceder a un 30% de decuento
               en el acto.
             </p>
-          </article>
-          <article>
+          </article> -->
+          <!--   <article>
             <div class="float-left">
               <img
                 src="img/icons/credit-card-solid.svg"
@@ -785,8 +778,8 @@
               Obtené un 15% de descuento y aboná tu garantía en 3 cuotas sin
               interés.
             </p>
-          </article>
-          <article>
+          </article> -->
+          <!--   <article>
             <div class="float-left">
               <img
                 src="img/icons/calendar-check-solid.svg"
@@ -799,18 +792,27 @@
               Optá por abonar tu garantía en 6 cuotas, abonando 30% de anticipo
               y 5 cuotas sin interés.
             </p>
-          </article>
+          </article> -->
           <article>
             <div class="float-left">
-              <img
-                src="img/icons/clock-solid.svg"
-                class="w-8 text-respaldar"
-                alt="icon"
-              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#009045"
+                class="size-10"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75"
+                />
+              </svg>
             </div>
-            <h4 class="ml-14 font-bold mb-4 text-lg">
+            <h3 class="ml-14 font-bold mb-4 text-lg">
               Resolución En Menos De 24
-            </h4>
+            </h3>
             <p class="text-sm ml-14 leading-6 mb-0">
               Una vez presentada la documentación, en menos de 24 horas
               obtendrás la resolución de tu garantía.
@@ -818,11 +820,24 @@
           </article>
           <article>
             <div class="float-left">
-              <img src="img/icons/user-tie-solid.svg" class="w-8" alt="icon" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#009045"
+                class="size-10"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                />
+              </svg>
             </div>
-            <h4 class="ml-14 font-bold mb-4 text-lg">
+            <h3 class="ml-14 font-bold mb-4 text-lg">
               Asesoramiento Personalizado
-            </h4>
+            </h3>
             <p class="text-sm ml-14 leading-6 mb-0">
               Un asesor comercial estará a su disposición para que puedas
               realizar las consultas que necesites
@@ -830,6 +845,122 @@
           </article>
         </div>
       </div>
+    </section>
+
+    <section class="relative py-24 px-6 md:px-12 lg:px-20 bg-respaldar">
+      <div
+        class="absolute top-[-1px] left-0 w-full h-14 md:h-22 bg-gray-200 clip-diagonal"
+      ></div>
+      <div class="container relative">
+        <div
+          class="relative md:p-8 p-4 rounded-3xl shadow-md overflow-hidden bg-gray-200"
+        >
+          <div class="max-w-5xl mx-auto text-center">
+            <h2
+              class="text-2xl md:text-4xl font-black text-gray-900 dark:text-white text-center"
+            >
+              <span class="text-respaldar"> Promociones de esta semana </span>
+            </h2>
+          </div>
+
+          <div
+            class="py-12 flex flex-col md:flex-row items-center justify-center gap-8"
+          >
+            <article
+              class="bg-gray-200 border-solid border-[2px] border-respaldar rounded-[15px_30px] min-w-[150px] min-h-[100px] md:min-h-[170px] md:min-w-[240px] flex items-center justify-center p-2.5 hover:shadow-sm hover:shadow-respaldar"
+            >
+              <div>
+                <div
+                  class="text-9xl font-black text-respaldar tracking-tighter"
+                >
+                  30<span
+                    class="text-6xl align-baseline tracking-tighter -ml-6 text-black font-black"
+                    >%</span
+                  >
+                </div>
+
+                <p
+                  class="block uppercase leading-none font-black text-center text-xl -mt-3"
+                >
+                  Descuento <br />
+                  de contado
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="bg-gray-200 border-solid border-[2px] border-respaldar rounded-[15px_30px] min-w-[150px] min-h-[100px] md:min-h-[170px] md:min-w-[240px] flex items-center justify-center p-2.5 hover:shadow-sm hover:shadow-respaldar"
+            >
+              <div>
+                <div
+                  class="text-9xl font-black text-respaldar tracking-tighter"
+                >
+                  15<span
+                    class="text-6xl align-baseline tracking-tighter -ml-6 text-black font-black"
+                    >%</span
+                  >
+                </div>
+
+                <p
+                  class="block uppercase leading-none font-black text-center text-xl -mt-3"
+                >
+                  Descuento <br />
+                  <span class="text-sm font-normal">+ 3 cuotas s/interés</span>
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="bg-gray-200 border-solid border-[2px] border-respaldar rounded-[15px_30px] min-w-[150px] min-h-[100px] md:min-h-[170px] md:min-w-[240px] flex items-center justify-center p-2.5 hover:shadow-sm hover:shadow-respaldar"
+            >
+              <div>
+                <div
+                  class="text-9xl font-black text-respaldar tracking-tighter"
+                >
+                  6
+                </div>
+
+                <p
+                  class="block uppercase leading-none font-black text-center text-xl -mt-3"
+                >
+                  Cuotas <br />
+                  <span class="text-sm font-normal">s/interés</span>
+                </p>
+              </div>
+            </article>
+            <article
+              class="bg-gray-200 border-solid border-[2px] border-respaldar rounded-[15px_30px] min-w-[150px] min-h-[100px] md:min-h-[170px] md:min-w-[240px] flex items-center justify-center p-2.5 hover:shadow-sm hover:shadow-respaldar"
+            >
+              <div>
+                <div
+                  class="text-9xl font-black text-respaldar tracking-tighter text-center"
+                >
+                  +
+                </div>
+
+                <p
+                  class="block uppercase leading-none font-black text-center text-xl -mt-3"
+                >
+                  Financiación <br />
+                  <span class="text-sm font-normal">*presupuesto a medida</span>
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="text-center">
+            <a
+              href="calcularcosto.html"
+              class="inline-block bg-respaldar hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-xl text-lg shadow-lg transition"
+              aria-label="Abrir calculador de garantía"
+              >Calculá el valor de tu garantía</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-[-1px] left-0 w-full h-14 md:h-22 bg-gray-200 clip-diagonal-bottom"
+      ></div>
     </section>
 
     <section id="requisitos" class="py-8">
@@ -840,20 +971,61 @@
           Requisitos para obtener tu garantía
         </h2>
 
-        <p class="mb-6 text-center">
-          Se requieren al menos dos personas que puedan demostrar ingresos,
-          debiendo presentar la documentación requerida.
-        </p>
-        <p class="mb-6 text-center">
-          La suma del 30% de los ingresos demostrados debe cubrir el alquiler +
-          expensas, en caso de no superar se requiere 1 Co-Solicitante más.
-        </p>
-        <p class="mb-6 text-center">
-          Si el SOLICITANTE (inquilino) no posee ingresos demostrables, aún así
-          puede obtener la garantía. Deberá contar con 2 Co-Solicitantes como
-          mínimo que demuestren ingresos.
-        </p>
-
+        <div class="grid grid-cols-3">
+          <p class="mb-6 flex flex-col text-center items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#009045"
+              class="size-10 mb-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
+              />
+            </svg>
+            Demostración de ingresos, <br />
+            aceptamos ingresos en el exterior
+          </p>
+          <p class="mb-6 flex flex-col text-center items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#009045"
+              class="size-10 mb-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
+              />
+            </svg>
+            Entre 30% y 50% <br />relación ingreso - alquiler+expensas
+          </p>
+          <p class="mb-6 flex flex-col text-center items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#009045"
+              class="size-10 mb-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
+              />
+            </svg>
+            Sin ingresos demostrables,<br />
+            aún podés solicitarla con co-solicitantes.
+          </p>
+        </div>
         <div class="space-y-4">
           <div class="bg-gray-200 rounded-xl overflow-hidden">
             <!-- Relación de Dependencia -->
@@ -1495,122 +1667,196 @@
 
     <!-- End Mobile Navbar -->
 
-    <footer class="bg-black mt-auto py-10 text-sm">
+    <footer class="bg-black pt-10 pb-4 text-sm">
       <div class="container flex justify-center">
-        <div class="grid md:grid-cols-4 gap-4 md:gap-12">
-          <div class="text-white">
-            <h4 class="uppercase font-bold mb-1 text-respaldar">
-              Casa Central / Legales
-            </h4>
-            <hr class="w-10 mb-4" />
-            <p class="pb-4">
-              <strong>Colegiales</strong><br />
-              Jorge Newbery 3835 <br />
-              CABA, Argentina<br />
-              <strong>Teléfono:</strong> 4551-3338<br />
-              <strong>Whatsapp:</strong> 11-8059-0005<br />
-              <strong>Email:</strong> legales@respaldar.com.ar<br />
-            </p>
-          </div>
-          <div class="text-white">
-            <h4 class="uppercase font-bold mb-1 text-respaldar">
-              Ventas / Comercial
-            </h4>
-            <hr class="w-10 mb-4" />
-            <p class="pb-4">
-              <strong>Edificio Respaldar Caballito</strong><br />
-              Franklin 787 <br />
-              CABA, Argentina<br />
-              <strong>Teléfono:</strong> 4551-3338<br />
-              <strong>Whatsapp:</strong> 11-8059-0005<br />
-              <strong>Email:</strong> comercial@respaldar.com.ar<br />
-            </p>
-          </div>
-          <div class="text-white">
-            <h4 class="uppercase font-bold mb-1 text-respaldar">
-              Administración
-            </h4>
-            <hr class="w-10 mb-4" />
-            <p class="pb-4">
-              <strong>Edificio Respaldar Palermo</strong><br />
-              Soler 3850<br />
-              CABA, Argentina<br />
-              <strong>Teléfono:</strong> 4551-3338<br />
-              <strong>Whatsapp:</strong> 11-8059-0005<br />
-              <strong>Email:</strong> info@respaldar.com.ar<br />
-            </p>
-          </div>
-          <div class="text-white">
-            <h4 class="uppercase font-bold mb-1 text-respaldar">
-              Oficinas Online
-            </h4>
-            <hr class="w-10 mb-4" />
-            <p class="pb-2">
-              <strong>Tigre - Nordelta</strong><br />
-              Pto. Diamante 365. Zaduh<br />
-              CABA, Argentina<br />
-            </p>
-            <p class="pb-4">
-              <strong>Villa Ortuzar</strong><br />
-              Donado 808<br />
-              Buenos Aires, Argentina<br />
-            </p>
-          </div>
-          <div class="text-white">
-            <h4 class="uppercase font-bold mb-1 text-respaldar">
-              Agentes Oficiales
-            </h4>
-            <hr class="w-10 mb-4" />
-            <p class="pb-4">
-              Gestioná tu Garantía Respaldar directamente con tu Agente Oficial.
-            </p>
-            <a
-              href="https://sistema.respaldar.com.ar/admin/login/agente-oficial"
-              target="_blank"
-              class="text-sm font-semibold text-white pt-4"
-              >Acceder
-              <span aria-hidden="true" class="text-respaldar pl-2">→</span></a
-            >
-          </div>
-          <div class="text-white">
-            <h4 class="uppercase font-bold mb-1 text-respaldar">
-              Mantenete Informado
-            </h4>
-            <hr class="w-10 mb-4" />
-            <p class="pb-4">
-              Seguinos en nuestras redes sociales y obtené toda la información
-              relevante.
-            </p>
-            <div class="flex gap-2">
+        <div class="grid md:grid-cols-5 gap-8 md:gap-12">
+          <address class="text-white not-italic">
+            <img
+              src="img/logo.svg"
+              alt="logo"
+              width="110"
+              height="40"
+              class="w-[140px] md:w-[110px] h-auto"
+            />
+            <hr class="w-10 mb-4 mt-2 md:my-4" />
+            <div class="flex flex-col gap-4 font-bold">
+              <div class="flex flex-row">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=5491180590005&text=Quiero+obtener+informacion&type=phone_number&app_absent=0"
+                  aria-label="Enviar un mensaje por Whatsapp a +54 9 11 8059-0005"
+                  class="flex items-center"
+                >
+                  <svg
+                    class="w-6 text-respaldar mr-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 3v2.25m-4.5 13.5h9m-9 0a2.25 2.25 0 0 1-2.25-2.25V15M16.5 18.75a2.25 2.25 0 0 0 2.25-2.25V15M4.5 15h15M12 5.25a6.75 6.75 0 0 1 6.75 6.75v.75A2.25 2.25 0 0 1 16.5 15h-9a2.25 2.25 0 0 1-2.25-2.25V12A6.75 6.75 0 0 1 12 5.25ZM9 12h.008m5.992 0H15M8.25 21h7.5"
+                    ></path>
+                  </svg>
+
+                  +54 9 11 8059-0005</a
+                >
+              </div>
+              <div class="flex flex-row">
+                <a
+                  href="tel:+541145513338"
+                  class="flex items-center"
+                  aria-label="Llamar a (011) 4551-3338"
+                >
+                  <svg
+                    class="w-6 text-respaldar mr-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                    ></path>
+                  </svg>
+
+                  4551-3338</a
+                >
+              </div>
+              <div class="flex flex-row">
+                <a
+                  href="mailto:info@respaldar.com.ar"
+                  aria-label="Enviar un correo a info@respaldar.com.ar"
+                  class="flex items-center"
+                >
+                  <svg
+                    class="w-6 text-respaldar mr-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                    ></path>
+                  </svg>
+
+                  info@respaldar.com.ar</a
+                >
+              </div>
+            </div>
+          </address>
+          <address class="text-white not-italic">
+            <h3 class="font-bold text-respaldar uppercase">
+              Nuestras Sucursales
+              <hr class="w-10 mb-4 mt-2 md:my-4" />
+            </h3>
+            <div class="flex flex-col gap-2 md:gap-5">
+              <p>
+                <strong>Colegiales</strong>
+                <span class="block">Jorge Newbery 3835, CABA</span>
+              </p>
+
+              <p>
+                <strong>Edificio Respaldar Caballito</strong>
+                <span class="block">Franklin 787, CABA</span>
+              </p>
+
+              <p>
+                <strong>Edificio Respaldar Palermo</strong>
+                <span class="block">Soler 3850, CABA</span>
+              </p>
+            </div>
+          </address>
+          <address class="text-white not-italic">
+            <div class="flex flex-col">
+              <h3 class="font-bold text-respaldar uppercase">
+                Oficinas Virtuales
+                <hr class="w-10 mb-4 mt-2 md:my-4" />
+              </h3>
+              <div class="flex flex-col gap-2 md:gap-5">
+                <p>
+                  <strong>Nordelta</strong>
+                  <span class="block">Pto. Diamante 365, Nordelta</span>
+                </p>
+                <p>
+                  <strong>Villa Ortuzar</strong>
+                  <span class="block">Donado 808, CABA</span>
+                </p>
+              </div>
+            </div>
+          </address>
+          <article class="text-white flex flex-col">
+            <h3 class="font-bold text-respaldar uppercase">
+              Categorías Destacadas
+              <hr class="w-10 mb-4 mt-2 md:my-4" />
+            </h3>
+            <div class="flex flex-col gap-2">
+              <a href="pre-aprobado-express-sin-cargo" target="_blank"
+                >Solicitar Garantía</a
+              >
+              <a href="calcularcosto.html">Calculador de Costos</a>
+              <a href="https://portal.respaldar.com.ar/" target="_blank"
+                >Portal Respaldar</a
+              >
+              <a href="inquilinos.html">Inquilinos</a>
+              <a href="propietarios.html">Propietarios</a>
+              <a href="inmobiliarias.html">Inmobiliarias</a>
+            </div>
+          </article>
+          <article class="text-white flex flex-col">
+            <h3 class="font-bold text-respaldar uppercase">
+              Redes Sociales
+              <hr class="w-10 mb-4 mt-2 md:mt-5" />
+            </h3>
+
+            <div class="flex gap-3">
               <a
                 href="https://www.instagram.com/respaldargarantia/"
                 target="_blank"
+                aria-label="Instagram de Respaldar"
                 ><img
                   src="img/icons/instagram-brands-solid.svg"
-                  alt="instagram"
-                  class="w-4 h-4"
+                  alt="Instagram de Respaldar"
+                  class="w-6 h-6"
+                  loading="lazy"
               /></a>
               <a
                 href="https://www.facebook.com/RespaldarGarantia"
                 target="_blank"
+                aria-label="Facebook de Respaldar"
                 ><img
                   src="img/icons/facebook-brands-solid.svg"
-                  alt="facebook"
-                  class="w-4 h-4"
+                  alt="Facebook de Respaldar"
+                  class="w-6 h-6"
+                  loading="lazy"
               /></a>
               <a
                 href="https://www.linkedin.com/company/respaldargarantia"
                 target="_blank"
+                aria-label="Linkedin de Respaldar"
                 ><img
                   src="img/icons/linkedin-brands-solid.svg"
-                  alt="linkedin"
-                  class="w-4 h-4"
+                  alt="Linkedin de Respaldar"
+                  class="w-6 h-6"
+                  loading="lazy"
               /></a>
             </div>
-          </div>
+          </article>
         </div>
       </div>
-      <div class="flex text-white justify-center p-8">
+      <div class="flex text-white justify-center pt-12 pb-8 px-8">
         © Copyright RESPALDAR de COMBRE S.A. All Rights Reserved
       </div>
     </footer>

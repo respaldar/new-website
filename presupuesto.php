@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Respaldar - Sistema de Garantía Para Alquilar</title>
+  <title>
+    Respaldar - Somos tu Garantía Para Alquilar Rápida y Sin Complicaciones
+  </title>
   <meta
     name="description"
-    content="Tu garantía para alquilar al mejor precio del mercado. Preaprobación Express sin costo. Requisitos mínimos." />
-  <meta
-    name="keywords"
-    content="Garantias, Garantías, Fianzas, Sistema de garantia para alquiar, Alquiler, Garantes, Respaldar, Respaldar Garantías, garantias, garantia, garantía para alquilar, garantia para alquilar, garantia alquiler, garantia propietaria" />
-  <meta name="geo.region" content="AR" />
-  <meta name="geo.placename" content="Buenos Aires" />
+    content="Obtén una garantía para alquilar rápida, segura y sin complicaciones. Preaprobación Express gratuita y sin necesidad de garantes propietarios. ¡Rápido y fácil!" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -39,21 +37,12 @@
     property="twitter:image"
     content="https://www.respaldar.com.ar/img/banner-redes.png" />
 
-  <!-- Google Font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon" />
 
-  <!-- Tailwind-->
-  <link href="style.css" rel="stylesheet" />
-
-  <!-- Main Css -->
+  <!-- Css -->
   <link href="css/style.css" rel="stylesheet" />
+  <link href="style.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -63,18 +52,24 @@
       aria-label="Global">
       <div class="flex container justify-between">
         <div class="flex lg:flex-1 items-center">
-          <a href="index.html"><img
+          <a href="index.html">
+            <img
               src="img/logo.svg"
               alt="logo"
-              class="w-[140px] md:w-[220px] h-auto md:h-auto" /></a>
+              width="220"
+              height="40"
+              class="w-[140px] md:w-[220px] h-auto" />
+          </a>
         </div>
         <div class="flex lg:hidden">
           <button
             type="button"
             class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-respaldar"
-            id="menu-button">
-            <span class="sr-only">Open main menu</span><svg
+            id="menu-button"
+            aria-expanded="false">
+            <span class="sr-only">Abrir Menu principal</span><svg
               xmlns="http://www.w3.org/2000/svg"
+              alt="menu"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
@@ -114,6 +109,7 @@
                     class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
+                      alt="garantia"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
@@ -180,12 +176,14 @@
                 class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                 <a
                   href="tel:+541145513338"
-                  class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
+                  class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  aria-label="Llamar a (011) 4551-3338">
                   <img src="img/icons/phone.svg" class="w-4" alt="phone" />
                   4551-3338
                 </a>
                 <a
                   href="https://api.whatsapp.com/send/?phone=5491180590005&text=Quiero+obtener+informacion&type=phone_number&app_absent=0"
+                  aria-label="Enviar un mensaje por Whatsapp a +54 9 11 8059-0005"
                   class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
                   <img src="img/icons/whatsapp.svg" class="w-4" alt="phone" />
                   Respy IA
@@ -291,12 +289,14 @@
                 class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                 <a
                   href="tel:+541145513338"
-                  class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
+                  class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  aria-label="Llamar a (011) 4551-3338">
                   <img src="img/icons/phone.svg" class="w-4" alt="phone" />
                   4551-3338
                 </a>
                 <a
                   href="https://api.whatsapp.com/send/?phone=5491180590005&text=Quiero+obtener+informacion&type=phone_number&app_absent=0"
+                  aria-label="Enviar un mensaje por Whatsapp a +54 9 11 8059-0005"
                   class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
                   <img src="img/icons/whatsapp.svg" class="w-4" alt="phone" />
                   Respy IA
@@ -362,12 +362,14 @@
                 class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                 <a
                   href="tel:+541145513338"
-                  class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
+                  class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  aria-label="Llamar a (011) 4551-3338">
                   <img src="img/icons/phone.svg" class="w-4" alt="phone" />
                   4551-3338
                 </a>
                 <a
                   href="https://api.whatsapp.com/send/?phone=5491180590005&text=Quiero+obtener+informacion&type=phone_number&app_absent=0"
+                  aria-label="Enviar un mensaje por Whatsapp a +54 9 11 8059-0005"
                   class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
                   <img src="img/icons/whatsapp.svg" class="w-4" alt="phone" />
                   Respy IA
@@ -381,8 +383,8 @@
           <a
             href="https://sistema.respaldar.com.ar/admin/login/agente-oficial"
             target="_blank"
-            class="text-sm font-semibold leading-6 text-white">Acceder
-            <span aria-hidden="true" class="text-respaldar pl-2">→</span></a>
+            class="text-sm font-semibold leading-6 text-white border-[1.5px] border-respaldar py-1 px-4 rounded-full">Solicitá tu Garantía
+            <span aria-hidden="true" class="text-respaldar pl-2 font-black">→</span></a>
         </div>
       </div>
     </nav>
@@ -740,117 +742,177 @@
     </div>
   </section>
 
-  <footer class="bg-black mt-auto py-10 text-sm">
+  <footer class="bg-black pt-10 pb-4 text-sm">
     <div class="container flex justify-center">
-      <div class="grid md:grid-cols-4 gap-4 md:gap-12">
-        <div class="text-white">
-          <h4 class="uppercase font-bold mb-1 text-respaldar">
-            Casa Central / Legales
-          </h4>
-          <hr class="w-10 mb-4" />
-          <p class="pb-4">
-            <strong>Colegiales</strong><br />
-            Jorge Newbery 3835 <br />
-            CABA, Argentina<br />
-            <strong>Teléfono:</strong> 4551-3338<br />
-            <strong>Whatsapp:</strong> 11-8059-0005<br />
-            <strong>Email:</strong> legales@respaldar.com.ar<br />
-          </p>
-        </div>
-        <div class="text-white">
-          <h4 class="uppercase font-bold mb-1 text-respaldar">
-            Ventas / Comercial
-          </h4>
-          <hr class="w-10 mb-4" />
-          <p class="pb-4">
-            <strong>Edificio Respaldar Caballito</strong><br />
-            Franklin 787 <br />
-            CABA, Argentina<br />
-            <strong>Teléfono:</strong> 4551-3338<br />
-            <strong>Whatsapp:</strong> 11-8059-0005<br />
-            <strong>Email:</strong> comercial@respaldar.com.ar<br />
-          </p>
-        </div>
-        <div class="text-white">
-          <h4 class="uppercase font-bold mb-1 text-respaldar">
-            Administración
-          </h4>
-          <hr class="w-10 mb-4" />
-          <p class="pb-4">
-            <strong>Edificio Respaldar Palermo</strong><br />
-            Soler 3850<br />
-            CABA, Argentina<br />
-            <strong>Teléfono:</strong> 4551-3338<br />
-            <strong>Whatsapp:</strong> 11-8059-0005<br />
-            <strong>Email:</strong> info@respaldar.com.ar<br />
-          </p>
-        </div>
-        <div class="text-white">
-          <h4 class="uppercase font-bold mb-1 text-respaldar">
-            Oficinas Online
-          </h4>
-          <hr class="w-10 mb-4" />
-          <p class="pb-2">
-            <strong>Tigre - Nordelta</strong><br />
-            Pto. Diamante 365. Zaduh<br />
-            CABA, Argentina<br />
-          </p>
-          <p class="pb-4">
-            <strong>Villa Ortuzar</strong><br />
-            Donado 808<br />
-            Buenos Aires, Argentina<br />
-          </p>
-        </div>
-        <div class="text-white">
-          <h4 class="uppercase font-bold mb-1 text-respaldar">
-            Agentes Oficiales
-          </h4>
-          <hr class="w-10 mb-4" />
-          <p class="pb-4">
-            Gestioná tu Garantía Respaldar directamente con tu Agente Oficial.
-          </p>
-          <a
-            href="https://sistema.respaldar.com.ar/admin/login/agente-oficial"
-            target="_blank"
-            class="text-sm font-semibold text-white pt-4">Acceder
-            <span aria-hidden="true" class="text-respaldar pl-2">→</span></a>
-        </div>
-        <div class="text-white">
-          <h4 class="uppercase font-bold mb-1 text-respaldar">
-            Mantenete Informado
-          </h4>
-          <hr class="w-10 mb-4" />
-          <p class="pb-4">
-            Seguinos en nuestras redes sociales y obtené toda la información
-            relevante.
-          </p>
-          <div class="flex gap-2">
+      <div class="grid md:grid-cols-5 gap-8 md:gap-12">
+        <address class="text-white not-italic">
+          <img
+            src="img/logo.svg"
+            alt="logo"
+            width="110"
+            height="40"
+            class="w-[140px] md:w-[110px] h-auto" />
+          <hr class="w-10 mb-4 mt-2 md:my-4" />
+          <div class="flex flex-col gap-4 font-bold">
+            <div class="flex flex-row">
+              <a
+                href="https://api.whatsapp.com/send/?phone=5491180590005&text=Quiero+obtener+informacion&type=phone_number&app_absent=0"
+                aria-label="Enviar un mensaje por Whatsapp a +54 9 11 8059-0005"
+                class="flex items-center">
+                <svg
+                  class="w-6 text-respaldar mr-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v2.25m-4.5 13.5h9m-9 0a2.25 2.25 0 0 1-2.25-2.25V15M16.5 18.75a2.25 2.25 0 0 0 2.25-2.25V15M4.5 15h15M12 5.25a6.75 6.75 0 0 1 6.75 6.75v.75A2.25 2.25 0 0 1 16.5 15h-9a2.25 2.25 0 0 1-2.25-2.25V12A6.75 6.75 0 0 1 12 5.25ZM9 12h.008m5.992 0H15M8.25 21h7.5"></path>
+                </svg>
+
+                +54 9 11 8059-0005</a>
+            </div>
+            <div class="flex flex-row">
+              <a
+                href="tel:+541145513338"
+                class="flex items-center"
+                aria-label="Llamar a (011) 4551-3338">
+                <svg
+                  class="w-6 text-respaldar mr-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"></path>
+                </svg>
+
+                4551-3338</a>
+            </div>
+            <div class="flex flex-row">
+              <a
+                href="mailto:info@respaldar.com.ar"
+                aria-label="Enviar un correo a info@respaldar.com.ar"
+                class="flex items-center">
+                <svg
+                  class="w-6 text-respaldar mr-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"></path>
+                </svg>
+
+                info@respaldar.com.ar</a>
+            </div>
+          </div>
+        </address>
+        <address class="text-white not-italic">
+          <h3 class="font-bold text-respaldar uppercase">
+            Nuestras Sucursales
+            <hr class="w-10 mb-4 mt-2 md:my-4" />
+          </h3>
+          <div class="flex flex-col gap-2 md:gap-5">
+            <p>
+              <strong>Colegiales</strong>
+              <span class="block">Jorge Newbery 3835, CABA</span>
+            </p>
+
+            <p>
+              <strong>Edificio Respaldar Caballito</strong>
+              <span class="block">Franklin 787, CABA</span>
+            </p>
+
+            <p>
+              <strong>Edificio Respaldar Palermo</strong>
+              <span class="block">Soler 3850, CABA</span>
+            </p>
+          </div>
+        </address>
+        <address class="text-white not-italic">
+          <div class="flex flex-col">
+            <h3 class="font-bold text-respaldar uppercase">
+              Oficinas Virtuales
+              <hr class="w-10 mb-4 mt-2 md:my-4" />
+            </h3>
+            <div class="flex flex-col gap-2 md:gap-5">
+              <p>
+                <strong>Nordelta</strong>
+                <span class="block">Pto. Diamante 365, Nordelta</span>
+              </p>
+              <p>
+                <strong>Villa Ortuzar</strong>
+                <span class="block">Donado 808, CABA</span>
+              </p>
+            </div>
+          </div>
+        </address>
+        <article class="text-white flex flex-col">
+          <h3 class="font-bold text-respaldar uppercase">
+            Categorías Destacadas
+            <hr class="w-10 mb-4 mt-2 md:my-4" />
+          </h3>
+          <div class="flex flex-col gap-2">
+            <a href="pre-aprobado-express-sin-cargo" target="_blank">Solicitar Garantía</a>
+            <a href="calcularcosto.html">Calculador de Costos</a>
+            <a href="https://portal.respaldar.com.ar/" target="_blank">Portal Respaldar</a>
+            <a href="inquilinos.html">Inquilinos</a>
+            <a href="propietarios.html">Propietarios</a>
+            <a href="inmobiliarias.html">Inmobiliarias</a>
+          </div>
+        </article>
+        <article class="text-white flex flex-col">
+          <h3 class="font-bold text-respaldar uppercase">
+            Redes Sociales
+            <hr class="w-10 mb-4 mt-2 md:mt-5" />
+          </h3>
+
+          <div class="flex gap-3">
             <a
               href="https://www.instagram.com/respaldargarantia/"
-              target="_blank"><img
+              target="_blank"
+              aria-label="Instagram de Respaldar"><img
                 src="img/icons/instagram-brands-solid.svg"
-                alt="instagram"
-                class="w-4 h-4" /></a>
+                alt="Instagram de Respaldar"
+                class="w-6 h-6"
+                loading="lazy" /></a>
             <a
               href="https://www.facebook.com/RespaldarGarantia"
-              target="_blank"><img
+              target="_blank"
+              aria-label="Facebook de Respaldar"><img
                 src="img/icons/facebook-brands-solid.svg"
-                alt="facebook"
-                class="w-4 h-4" /></a>
+                alt="Facebook de Respaldar"
+                class="w-6 h-6"
+                loading="lazy" /></a>
             <a
               href="https://www.linkedin.com/company/respaldargarantia"
-              target="_blank"><img
+              target="_blank"
+              aria-label="Linkedin de Respaldar"><img
                 src="img/icons/linkedin-brands-solid.svg"
-                alt="linkedin"
-                class="w-4 h-4" /></a>
+                alt="Linkedin de Respaldar"
+                class="w-6 h-6"
+                loading="lazy" /></a>
           </div>
-        </div>
+        </article>
       </div>
     </div>
-    <div class="flex text-white justify-center p-8">
+    <div class="flex text-white justify-center pt-12 pb-8 px-8">
       © Copyright RESPALDAR de COMBRE S.A. All Rights Reserved
     </div>
   </footer>
+
 
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="js/main.js"></script>
