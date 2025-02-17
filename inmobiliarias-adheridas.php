@@ -7,8 +7,8 @@ $offset = (isset($_REQUEST['offset']) && $_REQUEST['offset'] ? $_REQUEST['offset
 $term = (isset($_REQUEST['term']) && $_REQUEST['term'] ? $_REQUEST['term'] : null);
 $city = (isset($_REQUEST['city']) && $_REQUEST['city'] ? $_REQUEST['city'] : null);
 
-$inmobiliarias = getAgentesOficiales($limit, $offset, $term, $city);
-$localidades = getLocalidades(true);
+$inmobiliarias = getInmobiliariasAdheridas($limit, $offset, $term, null, $city);
+$localidades = getLocalidades();
 
 $total_count = $inmobiliarias->total_count;
 $page = ($offset + $limit) / $limit;
@@ -61,13 +61,30 @@ $pages = ceil($total_count / $limit);
   <link href="css/style.css" rel="stylesheet" />
   <link href="style.min.css" rel="stylesheet" />
   <style>
+    .adherir_inmobiliaria .inmobiliarias_contenido .inmobiliarias_resultados .resultado_box .titulo {
+      text-align: center;
+    }
+
     .adherir_inmobiliaria .inmobiliarias_contenido .inmobiliarias_resultados {
       max-width: 1300px;
       margin: auto;
     }
 
-    .adherir_inmobiliaria .inmobiliarias_contenido .inmobiliarias_resultados .resultado_box .titulo {
+    .adherir_inmobiliaria .adherir_botones_top div a {
+      background-color: #009045;
+      color: #fff;
+      border-radius: 5px;
+      padding: 9px 12px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 600;
       text-align: center;
+    }
+
+    .adherir_inmobiliaria .inmobiliarias_contenido .inmobiliarias_resultados .resultado_box img.default {
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
     }
   </style>
   <style>
@@ -521,15 +538,24 @@ $pages = ceil($total_count / $limit);
       <div class="mt-8 md:mt-0 lg:mt-0">
         <h1
           class="mt-2 mb-2 md:mb-8 text-3xl font-bold tracking-tight text-black uppercase text-center">
-          Agentes <br /><span
-            class="text-white xl:text-6xl capitalize">Oficiales</span>
+          Inmobiliarias <br /><span
+            class="text-white xl:text-6xl capitalize">Adheridas</span>
         </h1>
       </div>
     </div>
   </section>
 
   <!--MODELO 2-->
-  <section class="adherir_inmobiliaria adherir_agentes">
+  <section class="adherir_inmobiliaria" style="padding-top: 92px">
+    <div class="adherir_botones_top">
+      <div style="margin-left: 66px; margin-top:20px;">
+        <a href="adherir-inmobiliaria" target="_blank"><i class="far fa-building"></i>Adherir Inmobiliaria</a>
+        <a href="https://www.respaldar.com.ar/catalogo.html"><i class="fas fa-gifts"></i>Catálogo de Puntos</a>
+        <a class="inmobiliaria_selected" href="agentes-oficiales"><i class="fas fa-user-tie"></i>Agente Oficial</a>
+      </div>
+
+      <a href="https://sistema.respaldar.com.ar/admin/login/inmobiliaria-adherida" target="_blank"><button style="margin-top: 20px; margin-right: 66px;">ACCEDER <i class="fas fa-sign-in-alt"></i></button></a>
+    </div>
     <form name="form">
       <input type="hidden" name="offset" id="offset" />
       <input type="hidden" name="city" id="city" value="<?php echo $city ?>" />
@@ -546,7 +572,7 @@ $pages = ceil($total_count / $limit);
           </span>
           <div class="busqueda_filtro">
             <div class="input_container">
-              <i onclick="document.form.submit()" style="cursor: pointer;" class="fas fa-search"></i><input type="text" name="term" value="<?php echo $term ?>" placeholder="buscar inmobiliaria" />
+              <i onclick="$('#offset').val(0);document.form.submit()" style="cursor: pointer;" class="fas fa-search"></i><input type="text" name="term" value="<?php echo $term ?>" placeholder="buscar inmobiliaria" />
             </div>
             <a href="javascript:$('.modal_localidad').show()"><i class="fas fa-map-marked-alt"></i>Localidad</a>
           </div>
@@ -554,19 +580,19 @@ $pages = ceil($total_count / $limit);
         <div class="inmobiliarias_resultados">
           <?php foreach ($inmobiliarias->result as $inmobiliaria) { ?>
             <div class="resultado_box">
-              <div style="align-self: center;min-height: 77px;max-height: 77px;display: flex;overflow: hidden;">
-                <img style="<?php echo $inmobiliaria->logo ? '' : 'width: 90px' ?>" src="<?php echo $inmobiliaria->logo ? $inmobiliaria->logo : 'inmobiliaria-icon_b.svg' ?>" />
+              <div style="<?php echo $inmobiliaria->logo ? 'overflow: hidden; display: flex' : 'text-align: center; width: 100%;' ?>; align-self: center;min-height: 77px;max-height: 77px">
+                <img class="<?php echo $inmobiliaria->logo ? '' : '' ?>" src="<?php echo $inmobiliaria->logo ? $inmobiliaria->logo : 'logo-black.png' ?>" />
               </div>
               <span class="titulo"><?php echo $inmobiliaria->name ?></span>
 
-              <?php if ($inmobiliaria->web) { ?>
-                <span class="info"><i class="fas fa-globe-americas"></i><a style="color: inherit; text-decoration: none" href="<?php echo strpos($inmobiliaria->web, 'http') !== FALSE ? $inmobiliaria->web : ('http://' . $inmobiliaria->web); ?>" target="_blank"><?php echo $inmobiliaria->web ?: '&nbsp;' ?></a></span>
-              <?php } ?>
               <?php if ($inmobiliaria->phone) { ?>
                 <span class="info"><i class="fas fa-phone-alt"></i><?php echo $inmobiliaria->phone ?: '&nbsp;' ?></span>
               <?php } ?>
-              <?php if ($inmobiliaria->email) { ?>
-                <span class="info"><i class="fas fa-envelope"></i><?php echo $inmobiliaria->email ?: '&nbsp;' ?></span>
+              <?php if ($inmobiliaria->web) { ?>
+                <span class="info"><i class="fas fa-globe-americas"></i><a style="color: inherit; text-decoration: none" href="<?php echo strpos($inmobiliaria->web, 'http') !== FALSE ? $inmobiliaria->web : ('http://' . $inmobiliaria->web); ?>" target="_blank"><?php echo $inmobiliaria->web ?: '&nbsp;' ?></a></span>
+              <?php } ?>
+              <?php if ($inmobiliaria->address) { ?>
+                <span class="info"><i class="fas fa-map-marker-alt"></i><?php echo $inmobiliaria->address ?: '&nbsp;' ?></span>
               <?php } ?>
               <?php if ($inmobiliaria->city) { ?>
                 <span class="info"><i class="fas fa-map-marker-alt"></i><?php echo $inmobiliaria->city ?: '&nbsp;' ?></span>
@@ -621,8 +647,7 @@ $pages = ceil($total_count / $limit);
       background-color: #009045;
     }
   </style>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/app.js"></script>
+
   <footer class="bg-black pt-10 pb-4 text-sm">
     <div class="container flex justify-center">
       <div class="grid md:grid-cols-5 gap-8 md:gap-12">
@@ -793,6 +818,7 @@ $pages = ceil($total_count / $limit);
       © Copyright RESPALDAR de COMBRE S.A. All Rights Reserved
     </div>
   </footer>
+
   <script>
     $(function() {
       $('.localidad_zona').click(function(event) {
@@ -809,6 +835,7 @@ $pages = ceil($total_count / $limit);
       })
     })
   </script>
+
 </body>
 
 </html>
